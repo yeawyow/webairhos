@@ -17,7 +17,7 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Navbar</title>
+    <title>About</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar"> 
     <section id="about" class="bg-cover" style="background-image: url(image/Background_Akathospital.jpg)">
