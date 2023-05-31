@@ -21,6 +21,10 @@
     <title>Akathospital</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <div class="header">
+      <p>WelComeToWorld</p>
+    </div>
     <!-- ----------------------------------------------------NAVBAR------------------------------------------------------ -->
     <?php include('./front_end/navbar.php') ?>
     <!-- ----------------------------------------------------NAVBAR------------------------------------------------------ -->
