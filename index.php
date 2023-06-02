@@ -20,6 +20,9 @@
 
     <title>Akathospital</title>
   </head>
+  <?php use AltoRouter as Router;
+
+require_once 'vendor/autoload.php'; ?>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- ----------------------------------------------------NAVBAR------------------------------------------------------ -->
     <?php include('./front_end/navbar.php') ?>
