@@ -10,3 +10,30 @@
     color: skyblue;
 } */
 /* END Tag A */
+
+/* menulink */
+
+
+
+.menulink  {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* .menulink::before {
+    content: url();
+} */
+
+.menulink span {
+    position: relative;
+    top: 5.5px;
+}
+
+.menulink:hover {
+    color: blue;
+
+}
+
+
+/* END menulink */
