@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- END CSS BOOTSTRAP 5 ICON -->
 
+    <!-- data.md -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- END data.md -->
+
 
     <title>Akathospital</title>
 </head>
@@ -73,58 +77,44 @@
       </header>
 
       <main >
-
-        <div id="carouselExampleIndicators" class="carousel slide me-5 ms-5" data-bs-ride="carousel">
-          <div class="carousel-indicators ">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="bg-dark" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="bg-dark" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="bg-dark" aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="bg-dark" aria-label="Slide 7"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="bg-dark" aria-label="Slide 8"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="bg-dark" aria-label="Slide 9"></button>
-          </div>
-          <div class="carousel-inner h-100">
-            <div class="carousel-item active">
-              <img src="IMG/side_show/nogift3.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/side_show/43.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/side_show/6511.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/side_show/6512.png" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/side_show/6513.png" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/side_show/6514.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/side_show/66.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/side_show/77.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="IMG/side_show/03.jpg" class="d-block w-100 h-100" alt="...">
+        <section id="tranding">
+          <div class="container">
+            <div class="swiper tranding-slide">
+              <div class="swiper-wraper">
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="IMG/side_show/03.jpg" alt="Tranding">
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="IMG/side_show/03.jpg" alt="Tranding">
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="IMG/side_show/03.jpg" alt="Tranding">
+                  </div>
+                </div>
+                <!-- Slide-end -->
+              </div>
+              <div class="tranding-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon btn-dark" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon btn-dark" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      
+        </section>
       
        
 
@@ -134,7 +124,7 @@
 
         <!-- ACCORDION -->
 
-        <div class="containe-fluid row mb-2 ms-3 me-3 mb-5">
+        <div class="containe-fluid row mb-2 ms-3 me-3 mb-5 ">
           <div class="accordion accordion-flush text-start col border border-1 rounded" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -246,14 +236,14 @@
           <div class="col-md-6">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-success">_____________________________________________________________________</strong>
+                <strong class="d-inline-block mb-2 text-success">_____________________________________________________________</strong>
                 <h3 class="mb-2 mt-1">ผู้อำนวยการโรงพยาบาลอากาศอำนวย</h3>
-                <div class="mb-1 text-muted">_____________________________________________________________</div>
+                <div class="mb-1 text-muted">____________________________________________________</div>
                 <p class="mb-auto mt-2 ">แพทย์หญิง จิรัฐติกาล สุตวณิชย์</p>
                 <a href="#" class="stretched-link">ประวัติผู้อำนวยการ</a>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <img src="IMG/ผู้อำนวยการโรงพยาบาลอากาศอำนวย/01.jfif" alt="" width="200" height="250">
+                <img src="IMG/ผู้อำนวยการโรงพยาบาลอากาศอำนวย/01.jfif" alt="" width="150" height="200" class="pt-2 pe-2">
               </div>
             </div>
           </div>
@@ -264,12 +254,57 @@
 
 
       
-        <!-- FOOTER -->
-        <footer class="container-fluid ">
-          <p class="float-end"><a href="#">Back to top</a></p>
-          <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-        </footer>
-      </main>
+        <footer class="bd-footer py-5 mt-5 bg-light ">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-lg-4 ">
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                
+        <span class="fs-6">386 หมู่ 3 ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span>
+        </a>
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                
+        <span class="fs-6">042-799000</span>
+        </a>
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                
+        <span class="fs-8">h-akatumnauy@www.skko.moph.go.th</span>
+        </a>
+
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 ">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="">หน้าหลัก</a></li>
+          <li class="mb-2"><a href="">เกี่ยวกับองค์กร</a></li>
+          <li class="mb-2"><a href="">ข่าวสาร</a></li>
+          <li class="mb-2"><a href="">ผลการดำเนินงาน_ITA</a></li>
+          <li class="mb-2"><a href="">Contact</a></li>
+          <li class="mb-2"><a href="">ผลงานวิชาการ</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 ">
+        <h5>Guides</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/docs/5.0/getting-started/">Getting started</a></li>
+          <li class="mb-2"><a href="/docs/5.0/examples/starter-template/">Starter template</a></li>
+          <li class="mb-2"><a href="/docs/5.0/getting-started/webpack/">Webpack</a></li>
+          <li class="mb-2"><a href="/docs/5.0/getting-started/parcel/">Parcel</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 ">
+        <h5>Projects</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
       <!-- JS Bootstrap 5 -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -286,6 +321,12 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
       ></script> -->
       <!-- END JS ANIMATION -->
+
+      <!-- data.md -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <!-- END data.md -->
 
 
 
