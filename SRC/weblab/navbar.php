@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey</title>
+    <title>Navbar</title>
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!----css3---->
@@ -27,8 +27,8 @@
 
     <div class="xp-breadcrumbbar text-center">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-curent="page">IT Service</li>
-            <li class="breadcrumb-item active" aria-curent="page">สำรวจครุภัณฑ์คอมพิวเตอร์</li>
+            <li class="breadcrumb-item active" aria-curent="page">UI Customize</li>
+            <li class="breadcrumb-item active" aria-curent="page">Navbar</li>
         </ol>
     </div>
 
@@ -36,11 +36,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="table-wrapper">
-
 							<div class="table-title">
 								<div class="row">
 									<div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
-										<h2 class="ml-lg-2">ครุภัณฑ์คอมพิวเตอร์</h2>
+										<h2 class="ml-lg-2">การจัดการในส่วนของ Navbar</h2>
 									</div>
 									<div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
 										<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
@@ -54,7 +53,6 @@
 									</div>
 								</div>
 							</div>
-
 							<table class="table table-striped table-hover">
 								<thead>
 									<tr>
