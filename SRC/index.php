@@ -77,7 +77,7 @@
               <a class="nav-link" href="#">Web Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cardModal">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
                 จัดการหน้าเว็บ
               </a>
             </li>
@@ -85,42 +85,38 @@
         </div>
       </div>
     </nav>
-    <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="cardModalLabel">
-                      This Modal Contains a Grid
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container mt-4 p-4">
-                      <form action="">
-                        <input type="text" name="username">
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    
     <!-- END NAVBAR -->
   </header>
 
-  <!-- test -->
-  <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
-        <h3>Sign in here</h3>
-        <form action="login.php" method="post">
-            <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Username"> <input id="pass" type="password" name="Password" placeholder="Password"> </div> <input type="submit" name="" value="Login">
-        </form> 
-        <a href="#">Forget Password<br> </a>
-        <div class="text-center">
-            <p style="color: #59238F;">Sign-Up</p>
+  <!-- Modal -->
+  <div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-light ">
+          <h5 class="modal-title " id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        
+        <div class="modal-body ">
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer text-end bg-success">
+              <button type="submit" class="btn btn-primary border border-light">Login</button>
+              <button type="submit" class="btn btn-danger border border-light" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
-  <!-- END test -->
+  </div>
+  <!-- END Modal -->
 
 
   <div id="jssor_1" class="mb-3"

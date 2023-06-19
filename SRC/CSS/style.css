@@ -35,3 +35,55 @@
 
 /* END menulink */
 
+.login-modal .modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+  }
+
+  .login-modal .modal-header {
+    background-color: #6c757d;
+    color: #fff;
+    border-bottom: none;
+  }
+
+  .login-modal .modal-title {
+    font-weight: bold;
+  }
+
+  .login-modal .modal-body {
+    padding: 20px;
+  }
+
+  .login-modal .form-control {
+    border-radius: 5px;
+  }
+
+  .login-modal .modal-footer {
+    border-top: none;
+    justify-content: flex-end;
+    background-color: #f9f9f9;
+  }
+
+  .login-modal .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .login-modal .btn-primary:hover,
+  .login-modal .btn-primary:focus {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+
+  .login-modal .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  .login-modal .btn-danger:hover,
+  .login-modal .btn-danger:focus {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
