@@ -36,7 +36,7 @@
   <title>Akathospital</title>
 </head>
 
-<body>
+<body class="mb">
   <header class="mb-5">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
@@ -91,8 +91,8 @@
 
   <!-- Modal -->
   <div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content ">
         <div class="modal-header bg-success text-light ">
           <h5 class="modal-title " id="loginModalLabel">Login</h5>
           <button type="button" class="btn btn-close btn-outline-danger" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -119,10 +119,10 @@
   <!-- END Modal -->
 
 
-  <div id="jssor_1" class="mb-3"
+  <div id="jssor_1" class="mb-3 shadow p-3 mb-5 bg-body"
     style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
     <!-- Loading Screen -->
-    <div data-u="loading" class="jssorl-009-spin"
+    <div data-u="loading" class="jssorl-009-spin "
       style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
       <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
     </div>
@@ -201,7 +201,7 @@
   <!-- ACCORDION -->
 
   <div class="containe-fluid row mb-2 ms-3 me-3 mb-5 ">
-    <div class="accordion accordion-flush text-start col border border-1 rounded" id="accordionFlushExample">
+    <div class="accordion accordion-flush text-start col border border-1 rounded shadow p-3 mb-5 bg-body" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -345,7 +345,8 @@
                   class="material-symbols-outlined me-2">label_important</span>โครงสร้างมาตรฐานข้อมูล 43 แฟ้ม ปี61</a>
             </li>
             <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ขั้นตอนการให้บริการ</a></li>
+                  class="material-symbols-outlined me-2">label_important</span>ขั้นตอนการให้บริการ</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -371,9 +372,9 @@
     <!-- END ACCORDION -->
 
     <!-- รูปผอ. -->
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
+    <div class="col-md-6 ">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4  h-md-250 position-relative shadow p-3 mb-5 bg-body">
+        <div class="col p-4 d-flex flex-column position-static ">
           <strong
             class="d-inline-block mb-2 text-success">_____________________________________________________________</strong>
           <h3 class="mb-2 mt-1">ผู้อำนวยการโรงพยาบาลอากาศอำนวย</h3>
@@ -394,55 +395,55 @@
 
 
 
-  <footer class="bd-footer py-5 mt-5 bg-light ">
+  <footer class="bd-footer py-5 mt-5 bg-success text-light mb ">
     <div class="container py-4">
       <div class="row">
-        <div class="col-lg-4 ">
+        <div class="col-lg-4 border border-light border-2 rounded">
           <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
             aria-label="Bootstrap">
 
-            <span class="fs-6">386 หมู่ 3 ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span>
+            <span class="fs-6 text-light" >386 หมู่ 3 ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span>
           </a>
           <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
             aria-label="Bootstrap">
 
-            <span class="fs-6">042-799000</span>
+            <span class="fs-6 text-light">042-799000</span>
           </a>
           <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
             aria-label="Bootstrap">
 
-            <span class="fs-8">h-akatumnauy@www.skko.moph.go.th</span>
+            <span class="fs-8 text-light">h-akatumnauy@www.skko.moph.go.th</span>
           </a>
 
         </div>
-        <div class="col-6 col-lg-2 offset-lg-1 ">
+        <div class="col-6 col-lg-2 offset-lg-1 border border-light border-2 rounded ps-2 pt-2 me-2 ">
           <h5>Links</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="">หน้าหลัก</a></li>
-            <li class="mb-2"><a href="">เกี่ยวกับองค์กร</a></li>
-            <li class="mb-2"><a href="">ข่าวสาร</a></li>
-            <li class="mb-2"><a href="">ผลการดำเนินงาน_ITA</a></li>
-            <li class="mb-2"><a href="">Contact</a></li>
-            <li class="mb-2"><a href="">ผลงานวิชาการ</a></li>
+            <li class=" menu-footer"><a href="" class="text-decoration-none text-light">หน้าหลัก</a></li>
+            <li class=" menu-footer"><a href="" class="text-decoration-none text-light">เกี่ยวกับองค์กร</a></li>
+            <li class=" menu-footer"><a href="" class="text-decoration-none text-light">ข่าวสาร</a></li>
+            <li class=" menu-footer"><a href="" class="text-decoration-none text-light">ผลการดำเนินงาน_ITA</a></li>
+            <li class=" menu-footer"><a href="" class="text-decoration-none text-light">Contact</a></li>
+            <li class=" menu-footer"><a href="" class="text-decoration-none text-light">ผลงานวิชาการ</a></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-2 ">
+        <div class="col-6 col-lg-2 border border-light border-2 rounded ps-2 pt-2 me-2">
           <h5>Guides</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="/docs/5.0/getting-started/">Getting started</a></li>
-            <li class="mb-2"><a href="/docs/5.0/examples/starter-template/">Starter template</a></li>
-            <li class="mb-2"><a href="/docs/5.0/getting-started/webpack/">Webpack</a></li>
-            <li class="mb-2"><a href="/docs/5.0/getting-started/parcel/">Parcel</a></li>
+            <li class=" menu-footer"><a href="/docs/5.0/getting-started/" class="text-decoration-none text-light">Getting started</a></li>
+            <li class=" menu-footer"><a href="/docs/5.0/examples/starter-template/" class="text-decoration-none text-light">Starter template</a></li>
+            <li class=" menu-footer"><a href="/docs/5.0/getting-started/webpack/" class="text-decoration-none text-light">Webpack</a></li>
+            <li class=" menu-footer"><a href="/docs/5.0/getting-started/parcel/" class="text-decoration-none text-light">Parcel</a></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-2 ">
+        <div class="col-6 col-lg-2 border border-light border-2 rounded ps-2 pt-2">
           <h5>Projects</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
-            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-            <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
-            <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
-            <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+            <li class=" menu-footer"><a href="https://github.com/twbs/bootstrap" class="text-decoration-none text-light">Bootstrap 5</a></li>
+            <li class=" menu-footer"><a href="https://github.com/twbs/bootstrap/tree/v4-dev"class="text-decoration-none text-light">Bootstrap 4</a></li>
+            <li class=" menu-footer"><a href="https://github.com/twbs/icons" class="text-decoration-none text-light">Icons</a></li>
+            <li class=" menu-footer"><a href="https://github.com/twbs/rfs" class="text-decoration-none text-light">RFS</a></li>
+            <li class=" menu-footer"><a href="https://github.com/twbs/bootstrap-npm-starter" class="text-decoration-none text-light">npm starter</a></li>
           </ul>
         </div>
       </div>
@@ -450,94 +451,94 @@
   </footer>
 
   <!-- JS Bootstrap 5 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <!-- END JS Bootstrap 5 -->
 
   <!-- JS INDEX.JS -->
-  <script src="JS/index.js"></script>
+    <script src="JS/index.js"></script>
   <!-- END JS INDEX.JS -->
 
   <!-- #region Jssor Slider Begin -->
   <!-- Generator: Jssor Slider Composer -->
   <!-- Source: https://www.jssor.com/demos/image-gallery.slider/=edit -->
-  <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-  <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    jQuery(document).ready(function ($) {
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
 
-      var jssor_1_SlideshowTransitions = [
-        { $Duration: 800, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: -0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: 0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, y: 0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, y: -0.3, $SlideOut: true, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, y: -0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, y: 0.3, $SlideOut: true, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: 0.3, $Cols: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Column: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: 0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, y: 0.3, $Rows: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Row: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, y: 0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, y: 0.3, $Cols: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Column: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, y: -0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: 0.3, $Rows: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Row: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: -0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $Jease$.$InCubic, $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $SlideOut: true, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $Jease$.$InCubic, $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, $Delay: 20, $Clip: 3, $Assembly: 260, $Easing: { $Clip: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, $Delay: 20, $Clip: 3, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $Jease$.$OutCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, $Delay: 20, $Clip: 12, $Assembly: 260, $Easing: { $Clip: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-        { $Duration: 800, $Delay: 20, $Clip: 12, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $Jease$.$OutCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 }
-      ];
+        var jssor_1_SlideshowTransitions = [
+          { $Duration: 800, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: -0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: 0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, y: 0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, y: -0.3, $SlideOut: true, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, y: -0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, y: 0.3, $SlideOut: true, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: 0.3, $Cols: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Column: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: 0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, y: 0.3, $Rows: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Row: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, y: 0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, y: 0.3, $Cols: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Column: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, y: -0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: 0.3, $Rows: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Row: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: -0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $Jease$.$InCubic, $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $SlideOut: true, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $Jease$.$InCubic, $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, $Delay: 20, $Clip: 3, $Assembly: 260, $Easing: { $Clip: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, $Delay: 20, $Clip: 3, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $Jease$.$OutCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, $Delay: 20, $Clip: 12, $Assembly: 260, $Easing: { $Clip: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+          { $Duration: 800, $Delay: 20, $Clip: 12, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $Jease$.$OutCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 }
+        ];
 
-      var jssor_1_options = {
-        $AutoPlay: 1,
-        $SlideshowOptions: {
-          $Class: $JssorSlideshowRunner$,
-          $Transitions: jssor_1_SlideshowTransitions,
-          $TransitionsOrder: 1
-        },
-        $ArrowNavigatorOptions: {
-          $Class: $JssorArrowNavigator$
-        },
-        $ThumbnailNavigatorOptions: {
-          $Class: $JssorThumbnailNavigator$,
-          $SpacingX: 5,
-          $SpacingY: 5
+        var jssor_1_options = {
+          $AutoPlay: 1,
+          $SlideshowOptions: {
+            $Class: $JssorSlideshowRunner$,
+            $Transitions: jssor_1_SlideshowTransitions,
+            $TransitionsOrder: 1
+          },
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $ThumbnailNavigatorOptions: {
+            $Class: $JssorThumbnailNavigator$,
+            $SpacingX: 5,
+            $SpacingY: 5
+          }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*#region responsive code begin*/
+
+        var MAX_WIDTH = 980;
+
+        function ScaleSlider() {
+          var containerElement = jssor_1_slider.$Elmt.parentNode;
+          var containerWidth = containerElement.clientWidth;
+
+          if (containerWidth) {
+
+            var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+            jssor_1_slider.$ScaleWidth(expectedWidth);
+          }
+          else {
+            window.setTimeout(ScaleSlider, 30);
+          }
         }
-      };
 
-      var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+        ScaleSlider();
 
-      /*#region responsive code begin*/
-
-      var MAX_WIDTH = 980;
-
-      function ScaleSlider() {
-        var containerElement = jssor_1_slider.$Elmt.parentNode;
-        var containerWidth = containerElement.clientWidth;
-
-        if (containerWidth) {
-
-          var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-          jssor_1_slider.$ScaleWidth(expectedWidth);
-        }
-        else {
-          window.setTimeout(ScaleSlider, 30);
-        }
-      }
-
-      ScaleSlider();
-
-      $(window).bind("load", ScaleSlider);
-      $(window).bind("resize", ScaleSlider);
-      $(window).bind("orientationchange", ScaleSlider);
-      /*#endregion responsive code end*/
-    });
-  </script>
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        /*#endregion responsive code end*/
+      });
+    </script>
   <style>
     /*jssor slider loading skin spin css*/
     .jssorl-009-spin img {
