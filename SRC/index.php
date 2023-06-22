@@ -7,8 +7,7 @@
 
 
   <!-- CSS Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!--END CSS Bootstrap 5 -->
 
   <!-- style.css -->
@@ -20,8 +19,7 @@
   <!-- END carousel.css -->
 
   <!-- CSS BOOTSTRAP 5 ICON -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- END CSS BOOTSTRAP 5 ICON -->
 
   <!-- CDN Form Login -->
@@ -48,9 +46,7 @@
           <a class="navbar-brand" href="#">Akathospital</a>
         </div>
 
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbarCollapse">
@@ -85,7 +81,7 @@
         </div>
       </div>
     </nav>
-    
+
     <!-- END NAVBAR -->
   </header>
 
@@ -110,8 +106,8 @@
           </form>
         </div>
         <div class="modal-footer text-end bg-success">
-              <button type="submit" class="btn btn-outline-light border border-light">Login</button>
-              <button type="submit" class="btn btn-outline-light border border-danger" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-outline-light border border-light">Login</button>
+          <button type="submit" class="btn btn-outline-light border border-danger" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -119,15 +115,12 @@
   <!-- END Modal -->
 
 
-  <div id="jssor_1" class="mb-3 shadow p-3 mb-5 bg-body"
-    style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
+  <div id="jssor_1" class="mb-3 shadow p-3 mb-5 bg-body" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
     <!-- Loading Screen -->
-    <div data-u="loading" class="jssorl-009-spin "
-      style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+    <div data-u="loading" class="jssorl-009-spin " style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
       <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
     </div>
-    <div data-u="slides"
-      style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
       <div>
         <img data-u="image" src="IMG/side_show/03.jpg" />
         <img data-u="thumb" src="IMG/side_show/03.jpg" />
@@ -166,9 +159,7 @@
       </div>
     </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation</a>
     <!-- Thumbnail Navigator -->
-    <div data-u="thumbnavigator" class="jssort101"
-      style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1"
-      data-scale-bottom="0.75">
+    <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
       <div data-u="slides">
         <div data-u="prototype" class="p" style="width:190px;height:90px;">
           <div data-u="thumbnailtemplate" class="t"></div>
@@ -204,86 +195,65 @@
     <div class="accordion accordion-flush text-start col border border-1 rounded shadow p-3 mb-5 bg-body" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             weblink
           </button>
         </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-          data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
           <ul class="list-unstyled ms-5 ">
             <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>SMART
                 REFER</a></li>
             <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>IS
                 ONLINE</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ก้าวท้าใจ</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ระบบสารบัญ'สาสุข</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ก้าวท้าใจ</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ระบบสารบัญ'สาสุข</a></li>
             <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>HDC
                 43แฟ้ม(จังหวัด)</a></li>
             <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>โปรแกรม
                 iclamer</a></li>
             <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>สปสช</a>
             </li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>กรมบัญชีกลาง</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ระบบจัดซื้อจัดจ้างภาครัฐ</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>สหกรณ์ออมทรัพย์สาธารสุขสกลนคร</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>กรมบัญชีกลาง</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ระบบจัดซื้อจัดจ้างภาครัฐ</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>สหกรณ์ออมทรัพย์สาธารสุขสกลนคร</a></li>
           </ul>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
             นโยบายและยุทธศาสตร์
           </button>
         </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-          data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
           <ul class="list-unstyled ms-5">
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>หน้าที่และอำนาจหน่วยงานตามกฏกระทรวงสาธารณสุข</a>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>หน้าที่และอำนาจหน่วยงานตามกฏกระทรวงสาธารณสุข</a>
             </li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ยุทธศาสตร์ กระทรวงสาธารณสุข</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ยุทธศาสตร์ของประเทศ ยุทธศาสตร์ชาติ 20
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ยุทธศาสตร์ กระทรวงสาธารณสุข</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ยุทธศาสตร์ของประเทศ ยุทธศาสตร์ชาติ 20
                 ปี</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>แผนการใช้จ่ายงบประมาณประจำปี</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ข้อบังคับสำนักงานปลัดกระทรวงสาธารณสุขว่าด้วยจรรยาข้าราชการ
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>แผนการใช้จ่ายงบประมาณประจำปี</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ข้อบังคับสำนักงานปลัดกระทรวงสาธารณสุขว่าด้วยจรรยาข้าราชการ
                 สำนักงานปลัดกระทรวง พ.ศ.2560</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>คณะกรรมการจริยธรรม
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>คณะกรรมการจริยธรรม
                 ประจำสำนักงานปลัดกระทรวงสาธารณสุข</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>กฏกระทรวง 2560</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ยุทธศาสตร์ในระดับประเทศ
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>กฏกระทรวง 2560</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ยุทธศาสตร์ในระดับประเทศ
                 ที่เกี่ยวเนื่อง</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>พระราชบัญญัติมาตรฐานทางจริยธรรม
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>พระราชบัญญัติมาตรฐานทางจริยธรรม
                 พ.ศ.2562</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ประมวลจริยธรรมข้าราชการพลเรือน
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ประมวลจริยธรรมข้าราชการพลเรือน
                 พระราชบัญญัติมาตรฐานทางจริยธรรม พ.ศ.2552</a></li>
           </ul>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
             งาน ITA
           </button>
         </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-          data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
           <ul class="list-unstyled ms-5">
             <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ITA
                 2564</a></li>
@@ -296,74 +266,55 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
             ศูนย์ดำรงธรรม
           </button>
         </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-          data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
           <ul class="list-unstyled ms-5">
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ช่องทางการร้องเรียน/ร้องทุกข์</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>หลักเกณฑ์การแก้ไขปัญหา
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ช่องทางการร้องเรียน/ร้องทุกข์</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>หลักเกณฑ์การแก้ไขปัญหา
                 ในกรณีที่มีการร้องเรียน</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>รายงานผลดำเนินงานเกี่ยวกับเรื่องร้องเรียน</a>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>รายงานผลดำเนินงานเกี่ยวกับเรื่องร้องเรียน</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
             คู่มือ
           </button>
         </h2>
-        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-          data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
           <ul class="list-unstyled ms-5 text-dark">
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>อัตราค่าบริการของหน่วยบริการสาธารณสุข
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>อัตราค่าบริการของหน่วยบริการสาธารณสุข
                 รพ.อากาศอำนวย ปี2562</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>การให้บริการห้องปฏิบัติการเทคนิคการแพทย์</a>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>การให้บริการห้องปฏิบัติการเทคนิคการแพทย์</a>
             </li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>คู่มือการใช้ทรัพย์สินทางราชการ</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ช่องทางการร้องเรียนของโรงพยาบาลอากาศอำนวย</a>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>คู่มือการใช้ทรัพย์สินทางราชการ</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ช่องทางการร้องเรียนของโรงพยาบาลอากาศอำนวย</a>
             </li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ช่องทางการร้องเรียน</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>คู่มือการปฏิบัติงานการจัดการข้อร้องเรียนทั่วไปและการทุจริตประพฤตมิชอบ</a>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ช่องทางการร้องเรียน</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>คู่มือการปฏิบัติงานการจัดการข้อร้องเรียนทั่วไปและการทุจริตประพฤตมิชอบ</a>
             </li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>โครงสร้างมาตรฐานข้อมูล 43 แฟ้ม ปี61</a>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>โครงสร้างมาตรฐานข้อมูล 43 แฟ้ม ปี61</a>
             </li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ขั้นตอนการให้บริการ</a>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ขั้นตอนการให้บริการ</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingSix">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
             ข้อบังคับฯจรรยาบรรณกระทรวงสาธารณสุข
           </button>
         </h2>
-        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-          data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
           <ul class="list-unstyled ms-5">
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>ข้อบังคับว่าด้วยจรรยาข้าราชการ</a></li>
-            <li><a href="#" class="menulink"><span
-                  class="material-symbols-outlined me-2">label_important</span>จรรยาบรรณกระทรวงสาธารณสุข</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>ข้อบังคับว่าด้วยจรรยาข้าราชการ</a></li>
+            <li><a href="#" class="menulink"><span class="material-symbols-outlined me-2">label_important</span>จรรยาบรรณกระทรวงสาธารณสุข</a></li>
           </ul>
         </div>
       </div>
@@ -375,8 +326,7 @@
     <div class="col-md-6 ">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4  h-md-250 position-relative shadow p-3 mb-5 bg-body">
         <div class="col p-4 d-flex flex-column position-static ">
-          <strong
-            class="d-inline-block mb-2 text-success">_____________________________________________________________</strong>
+          <strong class="d-inline-block mb-2 text-success">_____________________________________________________________</strong>
           <h3 class="mb-2 mt-1">ผู้อำนวยการโรงพยาบาลอากาศอำนวย</h3>
           <div class="mb-1 text-muted">____________________________________________________</div>
           <p class="mb-auto mt-2 ">แพทย์หญิง จิรัฐติกาล สุตวณิชย์</p>
@@ -399,18 +349,15 @@
     <div class="container py-4">
       <div class="row">
         <div class="col-lg-4 border border-light border-2 rounded">
-          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
-            aria-label="Bootstrap">
+          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
 
-            <span class="fs-6 text-light" >386 หมู่ 3 ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span>
+            <span class="fs-6 text-light">386 หมู่ 3 ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span>
           </a>
-          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
-            aria-label="Bootstrap">
+          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
 
             <span class="fs-6 text-light">042-799000</span>
           </a>
-          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
-            aria-label="Bootstrap">
+          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
 
             <span class="fs-8 text-light">h-akatumnauy@www.skko.moph.go.th</span>
           </a>
@@ -440,7 +387,7 @@
           <h5>Projects</h5>
           <ul class="list-unstyled">
             <li class=" menu-footer"><a href="https://github.com/twbs/bootstrap" class="text-decoration-none text-light">Bootstrap 5</a></li>
-            <li class=" menu-footer"><a href="https://github.com/twbs/bootstrap/tree/v4-dev"class="text-decoration-none text-light">Bootstrap 4</a></li>
+            <li class=" menu-footer"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" class="text-decoration-none text-light">Bootstrap 4</a></li>
             <li class=" menu-footer"><a href="https://github.com/twbs/icons" class="text-decoration-none text-light">Icons</a></li>
             <li class=" menu-footer"><a href="https://github.com/twbs/rfs" class="text-decoration-none text-light">RFS</a></li>
             <li class=" menu-footer"><a href="https://github.com/twbs/bootstrap-npm-starter" class="text-decoration-none text-light">npm starter</a></li>
@@ -451,94 +398,365 @@
   </footer>
 
   <!-- JS Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- END JS Bootstrap 5 -->
 
   <!-- JS INDEX.JS -->
-    <script src="JS/index.js"></script>
+  <script src="JS/index.js"></script>
   <!-- END JS INDEX.JS -->
 
   <!-- #region Jssor Slider Begin -->
   <!-- Generator: Jssor Slider Composer -->
   <!-- Source: https://www.jssor.com/demos/image-gallery.slider/=edit -->
-    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      jQuery(document).ready(function ($) {
+  <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
 
-        var jssor_1_SlideshowTransitions = [
-          { $Duration: 800, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: -0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: 0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, y: 0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, y: -0.3, $SlideOut: true, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, y: -0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, y: 0.3, $SlideOut: true, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: 0.3, $Cols: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Column: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: 0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, y: 0.3, $Rows: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Row: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, y: 0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, y: 0.3, $Cols: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Column: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, y: -0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 12 }, $Easing: { $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: 0.3, $Rows: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Row: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: -0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 3 }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $Jease$.$InCubic, $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $SlideOut: true, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $Jease$.$InCubic, $Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, $Delay: 20, $Clip: 3, $Assembly: 260, $Easing: { $Clip: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, $Delay: 20, $Clip: 3, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $Jease$.$OutCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, $Delay: 20, $Clip: 12, $Assembly: 260, $Easing: { $Clip: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-          { $Duration: 800, $Delay: 20, $Clip: 12, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $Jease$.$OutCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 }
-        ];
-
-        var jssor_1_options = {
-          $AutoPlay: 1,
-          $SlideshowOptions: {
-            $Class: $JssorSlideshowRunner$,
-            $Transitions: jssor_1_SlideshowTransitions,
-            $TransitionsOrder: 1
+      var jssor_1_SlideshowTransitions = [{
+          $Duration: 800,
+          x: 0.3,
+          $During: {
+            $Left: [0.3, 0.7]
           },
-          $ArrowNavigatorOptions: {
-            $Class: $JssorArrowNavigator$
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
           },
-          $ThumbnailNavigatorOptions: {
-            $Class: $JssorThumbnailNavigator$,
-            $SpacingX: 5,
-            $SpacingY: 5
-          }
-        };
-
-        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-        /*#region responsive code begin*/
-
-        var MAX_WIDTH = 980;
-
-        function ScaleSlider() {
-          var containerElement = jssor_1_slider.$Elmt.parentNode;
-          var containerWidth = containerElement.clientWidth;
-
-          if (containerWidth) {
-
-            var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-            jssor_1_slider.$ScaleWidth(expectedWidth);
-          }
-          else {
-            window.setTimeout(ScaleSlider, 30);
-          }
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: -0.3,
+          $SlideOut: true,
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: -0.3,
+          $During: {
+            $Left: [0.3, 0.7]
+          },
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: 0.3,
+          $SlideOut: true,
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          y: 0.3,
+          $During: {
+            $Top: [0.3, 0.7]
+          },
+          $Easing: {
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          y: -0.3,
+          $SlideOut: true,
+          $Easing: {
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          y: -0.3,
+          $During: {
+            $Top: [0.3, 0.7]
+          },
+          $Easing: {
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          y: 0.3,
+          $SlideOut: true,
+          $Easing: {
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: 0.3,
+          $Cols: 2,
+          $During: {
+            $Left: [0.3, 0.7]
+          },
+          $ChessMode: {
+            $Column: 3
+          },
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: 0.3,
+          $Cols: 2,
+          $SlideOut: true,
+          $ChessMode: {
+            $Column: 3
+          },
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          y: 0.3,
+          $Rows: 2,
+          $During: {
+            $Top: [0.3, 0.7]
+          },
+          $ChessMode: {
+            $Row: 12
+          },
+          $Easing: {
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          y: 0.3,
+          $Rows: 2,
+          $SlideOut: true,
+          $ChessMode: {
+            $Row: 12
+          },
+          $Easing: {
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          y: 0.3,
+          $Cols: 2,
+          $During: {
+            $Top: [0.3, 0.7]
+          },
+          $ChessMode: {
+            $Column: 12
+          },
+          $Easing: {
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          y: -0.3,
+          $Cols: 2,
+          $SlideOut: true,
+          $ChessMode: {
+            $Column: 12
+          },
+          $Easing: {
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: 0.3,
+          $Rows: 2,
+          $During: {
+            $Left: [0.3, 0.7]
+          },
+          $ChessMode: {
+            $Row: 3
+          },
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: -0.3,
+          $Rows: 2,
+          $SlideOut: true,
+          $ChessMode: {
+            $Row: 3
+          },
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: 0.3,
+          y: 0.3,
+          $Cols: 2,
+          $Rows: 2,
+          $During: {
+            $Left: [0.3, 0.7],
+            $Top: [0.3, 0.7]
+          },
+          $ChessMode: {
+            $Column: 3,
+            $Row: 12
+          },
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          x: 0.3,
+          y: 0.3,
+          $Cols: 2,
+          $Rows: 2,
+          $During: {
+            $Left: [0.3, 0.7],
+            $Top: [0.3, 0.7]
+          },
+          $SlideOut: true,
+          $ChessMode: {
+            $Column: 3,
+            $Row: 12
+          },
+          $Easing: {
+            $Left: $Jease$.$InCubic,
+            $Top: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          $Delay: 20,
+          $Clip: 3,
+          $Assembly: 260,
+          $Easing: {
+            $Clip: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          $Delay: 20,
+          $Clip: 3,
+          $SlideOut: true,
+          $Assembly: 260,
+          $Easing: {
+            $Clip: $Jease$.$OutCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          $Delay: 20,
+          $Clip: 12,
+          $Assembly: 260,
+          $Easing: {
+            $Clip: $Jease$.$InCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
+        },
+        {
+          $Duration: 800,
+          $Delay: 20,
+          $Clip: 12,
+          $SlideOut: true,
+          $Assembly: 260,
+          $Easing: {
+            $Clip: $Jease$.$OutCubic,
+            $Opacity: $Jease$.$Linear
+          },
+          $Opacity: 2
         }
+      ];
 
-        ScaleSlider();
+      var jssor_1_options = {
+        $AutoPlay: 1,
+        $SlideshowOptions: {
+          $Class: $JssorSlideshowRunner$,
+          $Transitions: jssor_1_SlideshowTransitions,
+          $TransitionsOrder: 1
+        },
+        $ArrowNavigatorOptions: {
+          $Class: $JssorArrowNavigator$
+        },
+        $ThumbnailNavigatorOptions: {
+          $Class: $JssorThumbnailNavigator$,
+          $SpacingX: 5,
+          $SpacingY: 5
+        }
+      };
 
-        $(window).bind("load", ScaleSlider);
-        $(window).bind("resize", ScaleSlider);
-        $(window).bind("orientationchange", ScaleSlider);
-        /*#endregion responsive code end*/
-      });
-    </script>
+      var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+      /*#region responsive code begin*/
+
+      var MAX_WIDTH = 980;
+
+      function ScaleSlider() {
+        var containerElement = jssor_1_slider.$Elmt.parentNode;
+        var containerWidth = containerElement.clientWidth;
+
+        if (containerWidth) {
+
+          var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+          jssor_1_slider.$ScaleWidth(expectedWidth);
+        } else {
+          window.setTimeout(ScaleSlider, 30);
+        }
+      }
+
+      ScaleSlider();
+
+      $(window).bind("load", ScaleSlider);
+      $(window).bind("resize", ScaleSlider);
+      $(window).bind("orientationchange", ScaleSlider);
+      /*#endregion responsive code end*/
+    });
+  </script>
   <style>
     /*jssor slider loading skin spin css*/
     .jssorl-009-spin img {
