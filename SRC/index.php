@@ -95,23 +95,23 @@
       <div class="modal-content">
         <div class="modal-header bg-success text-light ">
           <h5 class="modal-title " id="loginModalLabel">Login</h5>
-          <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn btn-close btn-outline-danger" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body ">
-          <form>
-            <div class="mb-3">
+          <form action="#" method="POST">
+            <div class="mb-2">
               <label for="username" class="form-label">Username</label>
               <input type="text" class="form-control" id="username">
             </div>
-            <div class="mb-3">
+            <div class="mb-2">
               <label for="password" class="form-label">Password</label>
               <input type="password" class="form-control" id="password">
             </div>
           </form>
         </div>
         <div class="modal-footer text-end bg-success">
-              <button type="submit" class="btn btn-primary border border-light">Login</button>
-              <button type="submit" class="btn btn-danger border border-light" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-outline-light border border-light">Login</button>
+              <button type="submit" class="btn btn-outline-light border border-danger" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

@@ -35,6 +35,10 @@
 
 /* END menulink */
 
+.modal .modal-dialog .modal-content .modal-header {
+  background: skyblue;
+}
+
 .login-modal .modal-content {
     border-radius: 10px;
     overflow: hidden;
