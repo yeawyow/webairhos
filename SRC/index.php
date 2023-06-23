@@ -412,7 +412,7 @@
   <script src="JS/index.js"></script>
   <!-- END JS INDEX.JS -->
 
-  <h1>test</h1>
+  
 
   <!-- #region Jssor Slider Begin -->
   <!-- Generator: Jssor Slider Composer -->
