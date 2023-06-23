@@ -25,7 +25,7 @@
 <body>
 	<!------main-content-start----------->
 
-	<?php include 'front-end/sidebar_navbar.html' ?>
+	<?php include 'front-end/sidebar_navbar.php' ?>
 
 	<div class="xp-breadcrumbbar text-center">
 		<ol class="breadcrumb">

@@ -1,3 +1,13 @@
+<?php
+
+	session_start();
+	if (isset($_SESSION['username'])) {
+		echo "<script>alert('ยินดีต้อนรับ');</script>";
+	}
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -25,7 +35,7 @@
 </head>
 
 <body>
-	<?php include 'front-end/sidebar_navbar.html' ?>
+	<?php include 'front-end/sidebar_navbar.php' ?>
 
 	<div class="xp-breadcrumbbar text-center">
         <h4 class="page-title">Dashboard</h4>

@@ -1,3 +1,14 @@
+<?php
+    // session_start();
+
+    // if (isset('clickLogout')) {
+    //     session_unset();
+    //     session_destroy();
+    //     header('location: ../../index.php');
+    // }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -162,7 +173,7 @@
                                                     <span class="material-icons">settings</span>
                                                     Settings
                                                 </a></li>
-                                            <li><a href="#">
+                                            <li><a href="../../SRC/index.php" name="clickLogout">
                                                     <span class="material-icons">logout</span>
                                                     Logout
                                                 </a></li>
