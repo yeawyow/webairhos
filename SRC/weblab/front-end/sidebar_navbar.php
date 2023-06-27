@@ -173,7 +173,7 @@
                                                     <span class="material-icons">settings</span>
                                                     Settings
                                                 </a></li>
-                                            <li><a href="../../SRC/index.php" name="clickLogout">
+                                            <li><a href="../../SRC/connect/logout_db.php" name="clickLogout">
                                                     <span class="material-icons">logout</span>
                                                     Logout
                                                 </a></li>
