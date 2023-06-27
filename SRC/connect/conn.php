@@ -1,6 +1,6 @@
 <?php
 
-    session_start();
+    // session_start();
 
     $localhost = "192.168.2.25";
     $username = "yeaw";

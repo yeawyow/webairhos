@@ -1,5 +1,5 @@
 <?php
-    // session_start();
+     session_start();
 
     // if (isset('clickLogout')) {
     //     session_unset();
@@ -159,8 +159,10 @@
                         <div class="xp-profilebar text-right">
                             <nav class="navbar p-0">
                                 <ul class="nav navbar-nav flex-row ml-auto">
-                                    <li class="dropdown nav-item">
+                                    <p><?php echo $_SESSION['username']; ?></p>
+                                    <li class="dropdown nav-item ms-5">
                                         <a class="nav-link" href="#" data-toggle="dropdown">
+                                            
                                             <img src="img/user.jpg" style="width:40px; border-radius:50%;" />
                                             <span class="xp-user-live"></span>
                                         </a>

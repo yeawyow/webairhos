@@ -19,8 +19,9 @@
         header('location: ../weblab/index.php');
         exit;
     } else {
-        echo "Username หรือ Password ไม่ถูกต้อง";
-        header('location: ../index.php');
+        echo "<script>alert('Username หรือ Password ไม่ถูกต้อง');</script>";
+        // header('location: ../index.php');
+        echo "<script>window.location.href = '../index.php';</script>";
         exit;
     }
 

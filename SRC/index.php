@@ -56,22 +56,41 @@
         <div class="navbar-collapse collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto me-3">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">หน้าหลัก</a>
+              <a class="nav-link" aria-current="page" href="index.php">หน้าหลัก</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">เกี่ยวกับองค์กร</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">เกี่ยวกับองค์กร</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">ประวัติองค์กร</a></li>
+                <li><a class="dropdown-item" href="#">วิสัยทัศน์ พันธกิจ</a></li>
+                <li><a class="dropdown-item" href="#">คณะกรรมการบริหาร</a></li>
+                <li><a class="dropdown-item" href="#">แผนยุทธศาสตร์</a></li>
+                <li><a class="dropdown-item" href="#">กรอบโครงสร้างองค์กร</a></li>
+                <li><a class="dropdown-item" href="#">วิสัยทัศน์ พันธกิจ ค่านิยม MOPH</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ข่าวสาร</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">ข่าวสาร</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">ข่าวประชาสัมพันธ์</a></li>
+                <li><a class="dropdown-item" href="#">ข่าวจัดซื้อจัดจ้าง</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ผลการดำเนินงาน_ITA</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">ผลการดำเนินงาน_ITA</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">ปีงบประมาณ 2565</a></li>
+                <li><a class="dropdown-item" href="#">ปีงบประมาณ 2566</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ผลงานวิชาการ</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">ผลงานวิชาการ</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">ผลงานวิชาการปี 2565</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Web Service</a>
@@ -85,6 +104,8 @@
         </div>
       </div>
     </nav>
+
+
 
     <!-- END NAVBAR -->
   </header>
