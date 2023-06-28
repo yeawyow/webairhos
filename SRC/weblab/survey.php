@@ -91,78 +91,6 @@
 							</tr>
 
 
-							<tr>
-								<th><span class="custom-checkbox">
-										<input type="checkbox" id="checkbox2" name="option[]" value="1">
-										<label for="checkbox2"></label></th>
-								<th>Dominique Perrier</th>
-								<th>dominiquePerrier@gmail.com</th>
-								<th>90r ser57, Berlin poland Bermany.</th>
-								<th>(78-5235-2-9)</th>
-								<th>
-									<a href="#editEmployeeModal" class="edit" data-toggle="modal">
-										<i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-									</a>
-									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-										<i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-									</a>
-								</th>
-							</tr>
-
-
-							<tr>
-								<th><span class="custom-checkbox">
-										<input type="checkbox" id="checkbox3" name="option[]" value="1">
-										<label for="checkbox3"></label></th>
-								<th>Marai Andres</th>
-								<th>MarariAndres@gmail.com</th>
-								<th>90r ser57, Berlin poland Bermany.</th>
-								<th>(78-239-669)</th>
-								<th>
-									<a href="#edit" class="edit" data-toggle="modal">
-										<i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-									</a>
-									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-										<i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-									</a>
-								</th>
-							</tr>
-
-							<tr>
-								<th><span class="custom-checkbox">
-										<input type="checkbox" id="checkbox4" name="option[]" value="1">
-										<label for="checkbox4"></label></th>
-								<th>Vishweb Design</th>
-								<th>vishwebdesign@gmail.com</th>
-								<th> B-2 ser57 Nodia East Delhi,India.</th>
-								<th>(78-239-669)</th>
-								<th>
-									<a href="#editEmployeeModal" class="edit" data-toggle="modal">
-										<i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-									</a>
-									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-										<i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-									</a>
-								</th>
-							</tr>
-
-							<tr>
-								<th><span class="custom-checkbox">
-										<input type="checkbox" id="checkbox5" name="option[]" value="1">
-										<label for="checkbox5"></label></th>
-								<th>Vishwajeet Kumar</th>
-								<th>vishkumar234@gmail.com</th>
-								<th> B-2 ser57 Nodia East Delhi,India.</th>
-								<th>(78-555-229)</th>
-								<th>
-									<a href="#editEmployeeModal" class="edit" data-toggle="modal">
-										<i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-									</a>
-									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-										<i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-									</a>
-								</th>
-							</tr>
 
 						</tbody>
 
@@ -190,38 +118,50 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content row">
 						<div class="modal-header">
-							<h5 class="modal-title">Add Employees</h5>
+							<h5 class="modal-title">เพิ่มครุภัณฑ์</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div class="modal-body">
-							<div class="form-group col">
-								<label>Name</label>
+						<div class="modal-body row g-3">
+							<div class="form-group col-auto">
+								<label>หน่วยงาน</label>
 								<input type="text" class="form-control" required>
 							</div>
-							<div class="form-group col">
-								<label>Email</label>
+							<div class="form-group col-auto">
+								<label>จุดที่ตั้ง</label>
 								<input type="emil" class="form-control" required>
 							</div>
-							<div class="form-group col">
-								<label>Address</label>
+							<div class="form-group col-auto">
+								<label>ชื่อเครื่อง</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="form-group col-auto">
+								<label>ประเภทอุปกรณ์</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="form-group col-auto">
+								<label>หมายเลขครุภัณฑ์</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="form-group col-auto">
+								<label>วัน/เดือน/ปี ที่เริ่มใช้งาน</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="form-group col-auto">
+								<label>รายละเอียดเครื่อง</label>
+								<input type="text" class="form-control" required>
+							</div>
+							<div class="form-group col-auto">
+								<label>Note</label>
 								<textarea class="form-control" required></textarea>
 							</div>
-							<div class="form-group col">
-								<label>Phone</label>
+							<div class="form-group col-auto">
+								<label>สถานะเครื่อง</label>
 								<input type="text" class="form-control" required>
 							</div>
-							<div class="form-group col">
-								<label>Phone</label>
-								<input type="text" class="form-control" required>
-							</div>
-							<div class="form-group col">
-								<label>Phone</label>
-								<input type="text" class="form-control" required>
-							</div>
-							<div class="form-group col">
-								<label>Phone</label>
+							<div class="form-group col-auto">
+								<label>ผู้บันทึก</label>
 								<input type="text" class="form-control" required>
 							</div>
 						</div>
