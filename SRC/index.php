@@ -114,29 +114,31 @@
   <div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content ">
-        <div class="modal-header bg-success text-light ">
-          <h5 class="modal-title text-center " id="loginModalLabel">เข้าสู่ระบบ BackOffice</h5>
-          <button type="button" class="btn btn-close btn-outline-danger" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
         <div class="modal-body ">
+          <div class="text-end">
+            <button type="button" class="btn btn-close btn-outline-danger text-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
           <form action="connect/login_db.php" method="POST">
+            <div class="mb-2 text-center">
+              <i >
+                <img src="https://co-vaccine.moph.go.th/assets/images/moph-logo.gif" alt="" style="width: 200px; height: 200px;">
+              </i>
+            </div>
             <div class="mb-2">
-              <label for="username" class="form-label">Username</label>
+              <label for="username" class="form-label text-dark">Username</label>
               <input type="text" class="form-control" name="username" id="username">
             </div>
             <div class="mb-2">
-              <label for="password" class="form-label">Password</label>
+              <label for="password" class="form-label text-dark">Password</label>
               <input type="password" class="form-control" name="password" id="password">
             </div>
-            <div class="mt-2 text-end">
+            <div class="mt-3 text-end">
               <button type="submit" name="login" class="btn btn-outline-success border border-success">Login</button>
               <button type="submit" class="btn btn-outline-danger border border-danger" data-bs-dismiss="modal">Close</button>
             </div>
           </form>
         </div>
-        <div class="modal-footer text-end bg-success">
 
-        </div>
       </div>
     </div>
   </div>
