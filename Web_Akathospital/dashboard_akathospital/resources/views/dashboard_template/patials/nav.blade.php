@@ -1,6 +1,6 @@
 <aside id="sidebar">
-    <div class="h-100">
-        <div class="sidebar-logo">
+    <div class="h-100 ">
+        <div class="sidebar-logo fixed-sidebar">
             <img src="https://co-vaccine.moph.go.th/assets/images/moph-logo.gif" class="image me-3 ms-3" alt="">
             <a href="#">Akathospital</a>
             {{-- Sidebar Navigation --}}
@@ -9,7 +9,7 @@
                     Tools & Components
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="{{ url("dashboard") }}" class="sidebar-link">
                         <i class="fa-solid fa-list pe-2"></i>
                         Dashboard
                     </a>
@@ -56,6 +56,21 @@
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">Login</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Register</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#testCRUD"
+                        aria-expanded="false" aria-controls="auth">
+                        <i class="fa-regular fa-user pe-2"></i>
+                        Test CRUD
+                    </a>
+                    <ul id="testCRUD" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="{{ url("testCRUD") }}" class="sidebar-link">Test</a>
                         </li>
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">Register</a>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboardAdminController;
+use App\Http\Controllers\testCRUDAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,11 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [dashboardAdminController::class, 'index'])->name('dashboard');
+
+Route::get('/testCRUD', [testCRUDAdminController::class, 'index'])->name('testCRUD');
+Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');
+Route::get('/fetchall', [testCRUDAdminController::class, 'fetchAll'])->name('fetchAll');
+Route::get('/edit', [testCRUDAdminController::class, 'edit'])->name('edit');
+Route::post('/update', [testCRUDAdminController::class, 'update'])->name('update');
+Route::delete('/delete', [testCRUDAdminController::class, 'delete'])->name('delete');
+

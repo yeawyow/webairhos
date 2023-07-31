@@ -4,10 +4,25 @@
     box-sizing: border-box;
 }
 
+.fixed-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    padding-top: 15px;
+    /* Add any additional styles for your sidebar here */
+}
+
+nav#navbar {
+    position: fixed;
+    width: 168vh;
+}
+
 body {
     font-family: 'Poppins',sans-serif;
     margin: 0;
-    background-image: url('../image/pexels-scott-webb-593158.jpg');
+    background-image: url('../images/pexels-scott-webb-593158.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -42,12 +57,19 @@ li {
     transition: all 0.35s ease-in-out;
     box-shadow:  0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1111;
+    transition: all 1s ease;
 }
 
 /* Sidebar Collapsed */
 
 #sidebar.collapsed {
+    display: none;
     margin-left: -264px;
+    transition: all 1s ease;
+}
+
+#navbar.default {
+    width: 204vh;
 }
 
 .main {
@@ -129,4 +151,10 @@ a.sidebar-link {
         width: auto;
     }
 }
+
+/* container */ 
+.container-fluid {
+    margin-top: 50px;
+}
+
 

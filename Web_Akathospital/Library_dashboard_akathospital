@@ -1,0 +1,36 @@
+[วิธีเปิดใช้งาน Laravel]
+    [Terminal]
+        - php artisan serve
+
+[สร้าง model]
+    [Terminal]
+        - php artisan make:model {ชื่อ model} -m -> กด Enter ระบบจะทำการสร้าง Model ตามชื่อที่ตั้ง
+          และ ระบบทำการสร้างในส่วนของ Migrations ให้ด้วย [folder Migrations อยู่ที่ (database -> migrations -> ตามด้วยชื่อ migrations ที่ตั้งไว้ตั้งแต่สร้าง model)]
+
+[ให้ทำการสร้าง Field ใน Database ตามขั้นตอนดังนี้]
+    - เข้าไปที่ File Migrations ตามนี้ [database] -> [migrations] -> [ชื่อFile migrations ที่ได้ตั้งไว้]
+    - ทำการสร้าง field ด้วยคำสั่งดังนี้
+        public function up()
+            {
+                Schema::create('employees', function (Blueprint $table) {
+                    $table->id();
+                    $table->string('first_name');
+                    $table->string('last_name');
+                    $table->string('email');
+                    $table->string('avatar');
+                    $table->timestamps();
+                });
+            }
+    - และใช้คำสั่งใน File Employee.php ใน Folder Model ที่อยู่ของ File Employee.php ดังนี้ 
+        [app] -> [Models] -> [ชื่อไฟล์ที่ตั้งไว้ตอนสร้าง Model]
+    - และใช้คำสั่งในส่วนของ Class {ชื่อ Model} ดังนี้ 
+        protected $fillable = [
+            'first_name',
+            'last_name',
+            'email',
+            'avatar'
+        ];
+    - จากนั้นใช้คำสั่งใน terminal ดังนี้ 
+        [Terminal]
+            php artisan migrate
+    - เสร็จสิ้นการสร้าง Field ใน Database เรียบร้อยแล้ว
