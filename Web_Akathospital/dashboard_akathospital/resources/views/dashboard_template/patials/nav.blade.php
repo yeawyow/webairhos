@@ -107,6 +107,18 @@
                 <li class="sidebar-header">
                     Option
                 </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#employeeSystem"
+                        aria-expanded="false" aria-controls="employeeSystem">
+                        <i class="fa-regular fa-user pe-2"></i>
+                        Employee
+                    </a>
+                    <ul id="employeeSystem" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="{{ url("addUser") }}" class="sidebar-link">เพิ่มข้อมูลผู้ใช้งานระบบ</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

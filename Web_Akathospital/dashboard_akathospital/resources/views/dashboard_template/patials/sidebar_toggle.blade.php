@@ -10,12 +10,8 @@
             Username
         </button>
         <ul class="dropdown-menu dropdown-menu-end">
-            <li><a href="#" class="dropdown-item">Profile</a></li>
             <li><a href="#" class="dropdown-item">Setting</a></li>
-            <li><hr class="dropdown-divider"></li>
             <li><a href="#" class="dropdown-item">Logout</a></li>
         </ul>
     </div>
 </nav>
-
-

@@ -21,6 +21,8 @@
             
         </div>
 
+        {{-- @yield('scriptJS') --}}
+
         {{-- @include('dashboard_template.patials.footer') --}}
 
         @include('dashboard_template.patials.footer_script')
