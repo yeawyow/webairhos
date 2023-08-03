@@ -1,3 +1,15 @@
+/* Dropdown Hover Navbar Menu Start */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+/* Dropdown Hover Navbar Menu End */
+
+
 /* Akathospital Effect Start*/
 .typing {
     position: relative;
@@ -11,31 +23,41 @@
     font-weight: 700;
     overflow: hidden;
     margin-bottom: 0;
-    animation: type 5s steps(13);
-}
-
-.typing p {
-    position: relative;
-    letter-spacing: 5px;
-    font-size: 7rem;
-    font-weight: 700;
-    overflow: hidden;
-    margin-bottom: 0;
-    animation: type 5s steps(13) ;
+    animation: type 3s steps(120);
 }
 
 @keyframes type {
 
-    0%,
-    100% {
-        width: 0px;
+    0%,30% {
+        width: 0;
     }
-
-    30%,
-    60% {
+    60%,100% {
         width: 120vh;
     }
+
 }
+
+.typingP {
+    position: relative;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 700;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: logo 5s steps(120);
+}
+
+@keyframes logo {
+
+    0%,30% {
+        width: 0;
+    }
+    60%,100% {
+        width: 120vh;
+    }
+
+}
+
 /* Akathospital Effect End*/
 
 /* TO TOP Start */

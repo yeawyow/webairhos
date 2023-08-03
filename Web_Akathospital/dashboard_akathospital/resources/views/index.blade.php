@@ -3,7 +3,7 @@
 @section('content')
     <div class="container mt-4 mb-4">
         <div class="row ">
-            <div class="col-8 mb-5">
+            <div class="col-8 mb-5" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
                 <div class="container me-5 pe-5">
                     <p class="d-flex align-items-center justify-content-center ms-5 text-success"
                         style="font-size: 3rem; font-weight: 700;">ประกาศ</p>
@@ -90,15 +90,18 @@
                     <!-- #endregion Jssor Slider End -->
                 </div>
             </div>
-            <div class="col-4 mt-5">
+            <div class="col-4">
                 <div class="container ">
-                    <div style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" class="p-3" data-aos="fade-left"
+                    <div class="mt-3 mb-4 text-success d-flex align-items-center justify-content-center" >
+                        <h2 style="font-weight:700;" data-aos="fade-left"
+                        data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">ผู้อำนวยการโรงพยาบาล</h2>
+                    </div>
+                    <div style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); width:300px; height: 450px;" class="rounded-3 pt-4 ms-5" data-aos="fade-left"
                         data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
-                        <p class="text-center" style="font-size: 1.3rem; font-weight: 800;">
-                            ผู้อำนวยการโรงพยาบาลอากาศอำนวย</p>
                         <img class="mx-auto d-block" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);"
                             src="http://akathospital.com/assets/images/directors/boss.jpg" alt="">
-                        <p class="text-center mt-3 " style="font-size: 1.2rem;">นางจิรัฐติกาล สุตวณิชย์</p>
+                        <p class="text-center mt-2" style="font-size: 1.2rem;">แพทย์หญิงจิรัฐติกาล สุตวณิชย์</p>
+                        <p class="text-center" style="font-size: 1rem; "></p>
                     </div>
                 </div>
             </div>
