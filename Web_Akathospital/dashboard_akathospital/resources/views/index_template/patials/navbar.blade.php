@@ -11,14 +11,14 @@
             </div>
             <hr class="hr ms-5" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);">
             <div class="typingP">
-                <p class="ms-5 text-success text-uppercase">Welcome:To:Hospital:Webpage</p>
+                <p class="ms-5 text-success text-uppercase">Elevatinghealth,inspiringcare,aqualityhospital.</p>
             </div>
         </div>
 
     </div>
 </div>
 
-<header class="p-3 bg-success text-white mt-5 sticky-top" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+<header class="p-3 bg-success text-white mt-5 sticky-top" data-aos="fade-up" data-aos-duration="1500" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -29,13 +29,13 @@
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li>
-                    <a href="#" class="nav-link px-2 text-white" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="650" style="font-size: 1.5rem;" type="button">
+                    <a href="#" class="nav-link px-2 text-white" style="font-size: 1.5rem;" type="button">
                         หน้าหลัก
                     </a>
                 </li>
                 <li>
                     <div class="dropdown">
-                        <a class="nav-link px-2 text-white dropdown-toggle" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="650" style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link px-2 text-white " style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
                             เกี่ยวกับองค์
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -50,7 +50,7 @@
                 </li>
                 <li>
                     <div class="dropdown">
-                        <a class="nav-link px-2 text-white dropdown-toggle" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="650" style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link px-2 text-white " style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
                             ข่าวสาร
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                     <div class="dropdown">
-                        <a class="nav-link px-2 text-white dropdown-toggle" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="650" style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link px-2 text-white " style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
                             ผลการดำเนินงาน ITA
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -72,14 +72,14 @@
                 </li>
                 <li>
                     <div class="dropdown">
-                        <a href="#footer" class="nav-link px-2 text-white " data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="650" style="font-size: 1.5rem;" type="button" >
+                        <a href="#footer" class="nav-link px-2 text-white " style="font-size: 1.5rem;" type="button" >
                             ติดต่อเรา
                         </a>
                     </div>
                 </li>
                 <li>
                     <div class="dropdown">
-                        <a class="nav-link px-2 text-white dropdown-toggle" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="650" style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link px-2 text-white " style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
                             ผลงานวิชาการ
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">

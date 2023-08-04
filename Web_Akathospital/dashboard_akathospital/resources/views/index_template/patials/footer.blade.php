@@ -1,63 +1,90 @@
-<footer class="ftco-footer bg-dark ftco-bg-glay ftco-section" id="footer">
-    <div class="container">
-        <div class="row mb-0">
-            <div class="col-md">
+<footer class="text-white text-center text-lg-start bg-dark" id="footer" data-aos="fade-up" data-aos-duration="1500">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">About company</h5>
 
-                <div class="ftco-footer-widget mb-5">
-                    <div class="block-23 mb-3">
-                        <ul>
-                            <li><span class="icon icon-map-marker"></span><span class="text">386 หมู่ 3
-                                    ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span></li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span
-                                        class="text">042-799000</span></a></li>
-                            <li><a href="#"><span class="icon icon-envelope"></span><span
-                                        class="text">h-akatumnauy@www.skko.moph.go.th</span></a></li>
-                        </ul>
-                    </div>
+                <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                    voluptatum deleniti atque corrupti.
+                </p>
 
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span
-                                    class="icon-twitter"></span></a></li>
-                        <li class="ftco-animate fadeInUp ftco-animated"><a
-                                href="https://www.facebook.com/akathospital"><span
-                                    class="icon-facebook"></span></a></li>
-                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span
-                                    class="icon-instagram"></span></a></li>
-                    </ul>
+                <p>
+                    Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias.
+                </p>
+
+                <div class="mt-4">
+                    <!-- Facebook -->
+                    <a type="button" class="btn btn-floating btn-light btn-lg" href="{{ url('https://www.facebook.com/akathospital') }}" target="_blank" title="Facebookโรงพยาบาลอากาศอำนวย"><i class="fab fa-facebook-f"></i></a>
+                    <!-- Dribbble -->
+                    <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                    <!-- Twitter -->
+                    <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                    <!-- Google + -->
+                    <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                    <!-- Linkedin -->
                 </div>
             </div>
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-5 ml-md-4">
-                    <h2 class="ftco-heading-2">Links</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="home"><span class="ion-ios-arrow-round-forward mr-2"></span>หน้าหลัก</a>
-                        </li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a>
-                        </li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a>
-                        </li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <!--Grid column-->
 
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <ul class="fa-ul" style="margin-left: 1.65em;">
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">386 หมู่ 3 ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span>
+                    </li>
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">	h-akatumnauy@www.skko.moph.go.th</span>
+                    </li>
+                    <li class="mb-3">
+                        <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">042799000</span>
+                    </li>
+                </ul>
             </div>
+            <!--Grid column-->
 
-            <div class="row">
-                <div class="col-md-12 text-center">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">วันให้รับบริการ</h5>
 
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright ©
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>2023 All rights reserved | This template is made with <i
-                            class="icon-heart" aria-hidden="true"></i> by <a href="http://akathospital.com"
-                            target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-                </div>
+                <table class="table text-center text-white">
+                    <tbody class="fw-normal">
+                        <tr>
+                            <td>Mon - Thu:</td>
+                            <td>8am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>Fri - Sat:</td>
+                            <td>8am - 1am</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday:</td>
+                            <td>9am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday:</td>
+                            <td>9am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday:</td>
+                            <td>9am - 10pm</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <!--Grid column-->
         </div>
+        <!--Grid row-->
     </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        โรงพยาบาลอากาศอำนวย
+    </div>
+    <!-- Copyright -->
 </footer>
