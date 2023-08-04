@@ -5,23 +5,20 @@
         <div class="row mt-4">
             <!--Grid column-->
             <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">About company</h5>
+                <h5 class="text-uppercase mb-4">About Hospital</h5>
 
                 <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                    voluptatum deleniti atque corrupti.
-                </p>
-
-                <p>
-                    Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                    molestias.
+                    Akat Amnuay Hospital was originally a 10-bed hospital,
+                    completed in 2525 BE, built on a 26 rai 29 square wah area
+                    and commenced services on May 10, 2525 BE. In 2535 BE, the hospital was expanded to a 30-bed hospital.
+                    Then on September 1, 2537 BE, further upgraded to a 60-bed hospital.
                 </p>
 
                 <div class="mt-4">
                     <!-- Facebook -->
                     <a type="button" class="btn btn-floating btn-light btn-lg" href="{{ url('https://www.facebook.com/akathospital') }}" target="_blank" title="Facebookโรงพยาบาลอากาศอำนวย"><i class="fab fa-facebook-f"></i></a>
                     <!-- Dribbble -->
-                    <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                    <a type="button" class="btn btn-floating btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#maphospital" title="แผนที่โรงพยาบาลอากาศอำนวย"><i class="fa-solid fa-location-dot"></i></a>
                     <!-- Twitter -->
                     <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
                     <!-- Google + -->
@@ -38,7 +35,7 @@
                         <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">386 หมู่ 3 ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span>
                     </li>
                     <li class="mb-3">
-                        <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">	h-akatumnauy@www.skko.moph.go.th</span>
+                        <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2"> h-akatumnauy@www.skko.moph.go.th</span>
                     </li>
                     <li class="mb-3">
                         <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">042799000</span>

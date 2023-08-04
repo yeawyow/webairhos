@@ -91,7 +91,6 @@
 
             <div class="text-end">
                 <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#manageWebPage">Manage Web Page</button>
-                <a class="btn btn-outline-warning" style="text-decoration: none;" href="http://192.168.2.7/backoffice" target="_blank">BackOffice</a>
             </div>
         </div>
     </div>
