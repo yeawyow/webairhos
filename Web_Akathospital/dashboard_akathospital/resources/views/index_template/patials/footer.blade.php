@@ -1,4 +1,4 @@
-<footer class="ftco-footer bg-dark ftco-bg-glay ftco-section">
+<footer class="ftco-footer bg-dark ftco-bg-glay ftco-section" id="footer">
     <div class="container">
         <div class="row mb-0">
             <div class="col-md">

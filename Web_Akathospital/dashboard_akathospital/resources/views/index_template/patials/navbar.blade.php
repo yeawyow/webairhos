@@ -39,9 +39,12 @@
                             เกี่ยวกับองค์
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">ประวัติองค์กร</a></li>
+                            <li><a class="dropdown-item" href="#">วิสัยทัศน์ พันธกิจ</a></li>
+                            <li><a class="dropdown-item" href="#">คณะกรรมการบริหาร</a></li>
+                            <li><a class="dropdown-item" href="#">แผนยุทธศาสตร์</a></li>
+                            <li><a class="dropdown-item" href="#">กรอบโครงสร้างองค์กร</a></li>
+                            <li><a class="dropdown-item" href="#">วิสัยทัศน์ พันธกิจ ค่านิยม MOPH</a></li>
                         </ul>
                     </div>
                 </li>
@@ -51,9 +54,8 @@
                             ข่าวสาร
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">ข่าวประชาสัมพันธ์</a></li>
+                            <li><a class="dropdown-item" href="#">ข่าวจัดซื้อจัดจ้าง</a></li>
                         </ul>
                     </div>
                 </li>
@@ -63,22 +65,16 @@
                             ผลการดำเนินงาน ITA
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">ปีงบประมาณ 2565</a></li>
+                            <li><a class="dropdown-item" href="#">ปีงบประมาณ 2566</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
                     <div class="dropdown">
-                        <a class="nav-link px-2 text-white dropdown-toggle" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="650" style="font-size: 1.5rem;" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <a href="#footer" class="nav-link px-2 text-white " data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="650" style="font-size: 1.5rem;" type="button" >
                             ติดต่อเรา
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </div>
                 </li>
                 <li>
@@ -87,9 +83,7 @@
                             ผลงานวิชาการ
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item text-success" href="#">ผลงานวิชาการ 2565</a></li>
                         </ul>
                     </div>
                 </li>
