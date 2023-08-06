@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\indexShowIMGController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +21,10 @@ use App\Http\Controllers\indexShowIMGController;
 // });
 
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
-
+// Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard');
 
 Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 
+Auth::routes();
 
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
