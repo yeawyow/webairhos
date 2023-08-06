@@ -73,9 +73,8 @@
         </div>
     </div>
     @include('index_template.patials.topNavbar')
-    <div class="mt-5">
-        @include('index_template.patials.navbar')
-    </div>
+
+    @include('index_template.patials.navbar')
 
 
     @yield('content')
