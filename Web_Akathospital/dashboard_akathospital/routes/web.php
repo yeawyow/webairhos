@@ -27,4 +27,4 @@ Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('ind
 
 Auth::routes();
 
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

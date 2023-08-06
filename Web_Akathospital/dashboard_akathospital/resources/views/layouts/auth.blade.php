@@ -927,7 +927,7 @@
                                         <form method="post" action="{{ route('logout') }}">
                                             @csrf
                                             <a class="dropdown-link-item" href=""><button><i
-                                                class="mdi mdi-logout"></i></button> Log Out </a>
+                                                class="mdi mdi-logout"></i> Log Out </button></a>
                                             {{-- <a href=""><button class="me-5"><i class="mdi mdi-logout"></i> Log Out </button></a> --}}
                                         </form>
                                     </li>
