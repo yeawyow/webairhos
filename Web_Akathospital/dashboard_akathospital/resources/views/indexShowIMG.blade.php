@@ -1,7 +1,7 @@
 @extends('index_template.mainShow')
 
 @section('content')
-    <h1 class="mb-5 d-flex align-items-center justify-content-center shadow-5" data-aos="fade-up" data-aos-duration="1500">Show All Activity</h1>
+    <h1 class="mb-5 d-flex align-items-center justify-content-center bg-success text-light rounded-3" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1500">รวมกิจกรรม</h1>
     <div class="d-lg-flex" data-aos="fade-up" data-aos-duration="1500">
         <div class="row row-cols-3">
             <div class="col mb-5">
@@ -119,8 +119,8 @@
                 </div>
             </div>
         </div>
-        
-        
-        
+
+
+
     </div>
 @endsection
