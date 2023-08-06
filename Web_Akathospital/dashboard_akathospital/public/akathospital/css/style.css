@@ -220,7 +220,7 @@
 /* Card Start */
 .card {
     width: 280px;
-    height: 520px;
+    height: 420px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: #fff;
     transition: all 0.5s ease;
