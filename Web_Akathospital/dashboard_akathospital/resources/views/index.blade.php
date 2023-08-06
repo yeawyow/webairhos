@@ -102,7 +102,7 @@
             @include('index_template.patials.menuBar')
         </div>
         <div class="col-8">
-            <h1 class="mb-3 d-flex align-items-center justify-content-center shadow-5" data-aos="fade-up" data-aos-duration="1500">กิจกรรม</h1>
+            <h1 class="mb-5 d-flex align-items-center justify-content-center bg-success text-light rounded-3" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1500">กิจกรรม</h1>
             <div class="d-lg-flex" data-aos="fade-up" data-aos-duration="1500">
                 <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
                     <div class="backgroundEffect"></div>
