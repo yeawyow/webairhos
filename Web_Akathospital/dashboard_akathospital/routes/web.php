@@ -5,6 +5,7 @@ use App\Http\Controllers\dashboardAdminController;
 use App\Http\Controllers\testCRUDAdminController;
 use App\Http\Controllers\addUserController;
 use App\Http\Controllers\indexController;
+use App\Http\Controllers\indexShowIMGController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::get('/', [indexController::class, 'index'])->name('Akathospital');
 Route::get('/dashboard', [dashboardAdminController::class, 'index'])->name('dashboard');
 
 Route::get('/testCRUD', [testCRUDAdminController::class, 'index'])->name('testCRUD');
+Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 Route::get('/addUser', [addUserController::class, 'index'])->name('addUser');
 
 Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');

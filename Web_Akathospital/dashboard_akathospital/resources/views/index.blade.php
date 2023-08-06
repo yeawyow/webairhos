@@ -99,66 +99,7 @@
 <div class="container mb-5">
     <div class="row">
         <div class="col-4">
-            <div class="accordion rounded-2" style="width: 400px; box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" id="accordionExample" data-aos="fade-up" data-aos-duration="1500">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Link ภายนอก
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="http://192.168.2.7/backoffice" target="_blank">BackOffice</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2"> 
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="http://192.168.2.3:8082/#/login" target="_blank">SMART REFER</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="http://ae.moph.go.th/isonline/" target="_blank">IS ONLINE</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="https://www.kaotajai.com/login" target="_blank">ก้าวท้าใจ</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="http://203.157.177.6/archives/" target="_blank">ระบบสารบัญ'สาสุข</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="https://snk.hdc.moph.go.th/hdc/main/index_pk.php" target="_blank">HDC43แฟ้ม(จังหวัด)</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="https://skko.moph.go.th/iclaimer/main/index.php" target="_blank">โปรแกรม iclamer</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="https://r8way.moph.go.th/r8way/" target="_blank">เขตสุขภาพที่ 8</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="https://www.cgd.go.th/cs/internet/internet/%e0%b8%ab%e0%b8%99%e0%b9%89%e0%b8%b2%e0%b8%ab%e0%b8%a5%e0%b8%b1%e0%b8%81.html" target="_blank">กรมบัญชีกลาง</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="http://www.gprocurement.go.th/new_index.html" target="_blank">ระบบจัดซื้อจัดจ้างภาครัฐ</a>
-                                </li>
-                                <li style="list-style: none;" class="mt-2">
-                                    <a class="btn btn-outline-success" style="text-decoration: none; width: 280px;" href="https://coop-online.phsncoop.com/" target="_blank">สหกรณ์ออมทรัพย์สาธารณสุขสกลนคร</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Link ภายใน
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @include('index_template.patials.menuBar')
         </div>
         <div class="col-8">
             <div class="d-lg-flex" data-aos="fade-up" data-aos-duration="1500">
@@ -171,7 +112,7 @@
                         <p class="h-1 mt-4">โครงการแลกเปลี่ยนการดำเนิน IMC เครือข่ายจังหวัดสกลนครปี 2566</p>
                         <p class="text-muted mt-3">โรงพยาบาลอากาศอำนวย ขอขอบคุณพระคุณอาจารย์อนุชา วินิจสุมานนท์ แพทย์เวชศาสตร์ฟื้นฟู รพศ.สกลนคร และทีมเยี่ยมเสริมพลังทุกท่าน</p>
                         <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
-                            <div class="btn btn-primary">Read More<span class="fas fa-arrow-right"></span></div>
+                            <a href="{{ url("indexShowIMG") }}" class="btn btn-primary">Read More<span class="fas fa-arrow-right"></span></a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +125,7 @@
                         <p class="h-1 mt-4">รับการประเมิน Green&Clean Challenge ประจำปี 2566</p>
                         <p class="text-muted mt-3">รับการประเมิน Gree&Clean Challenge ประจำปี 2566 โดยศูนย์อนามัยที่ 8 อุดรธานี ณ ห้องประชุมเล็ก โรงพยาบาลอากาศอำนวย</p>
                         <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
-                            <div class="btn btn-primary">Read More<span class="fas fa-arrow-right"></span></div>
+                            <a href="{{ url("indexShowIMG") }}" class="btn btn-primary">Read More<span class="fas fa-arrow-right"></span></a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +138,7 @@
                         <p class="h-1 mt-4">รับเยี่ยมเสริมพลังและ Training on the job ในงานอนามัยแม่และเด็ก</p>
                         <p class="text-muted mt-3">แพทย์หญิงจิรัฐติกาล สุตวณิชย์ พร้อมด้วยเจ้าหน้าที่งานอนามัยแม่และเด็ก รับเยี่ยมเสริมพลังและ Training on the job </p>
                         <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
-                            <div class="btn btn-primary">Read More<span class="fas fa-arrow-right"></span></div>
+                            <a href="{{ url("indexShowIMG") }}" class="btn btn-primary">Read More<span class="fas fa-arrow-right"></span></a>
                         </div>
                     </div>
                 </div>

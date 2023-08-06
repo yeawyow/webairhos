@@ -40,6 +40,7 @@
     </div>
     {{-- Login Dashboard End --}}
 
+    {{-- Map Footer Alert Start --}}
     <div class="modal fade " id="maphospital" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
             <div class="modal-content" style="width: 800px; height: 550px;">
@@ -72,13 +73,21 @@
             </div>
         </div>
     </div>
-    @include('index_template.patials.topNavbar')
-    <div class="mt-5">
-        @include('index_template.patials.navbar')
+    {{-- Map Footer Alert End --}}
+
+    @include('index_template.patials.navbar')
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-4">
+                @include('index_template.patials.menuBar')
+            </div>
+            <div class="col-8">
+                @yield('content')
+            </div>
+        </div>
     </div>
-
-
-    @yield('content')
+    
 
     @include('index_template.patials.footer')
 
