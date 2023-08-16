@@ -1,3 +1,27 @@
+body {
+    background-color: #F9F7F0;
+}
+
+/* Navbar */
+header.p-3.sticky-top.aos-init.aos-animate {
+    background-color: #178CA4;
+    
+}
+
+a.nav-link.px-2 {
+    color: #F9F7F0;
+}
+
+/* Font-color */
+.container_bottom {
+    color: pink;
+}
+
+/* Background */
+/* .background .bg-light {
+    background-color: #fff;
+} */
+
 /* Dropdown Hover Navbar Menu Start */
 .dropdown:hover>.dropdown-menu {
     display: block;
@@ -16,10 +40,22 @@
     -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
 }
 
+/* Top BTN */
+button#myBtn:hover {
+    background: #072A40;
+    color: #F9F7F0;
+}
+
+/* Menu Bar  */
+
+
+
+
 .typing h2{
     position: relative;
     letter-spacing: 5px;
     font-size: 7rem;
+    color: #178CA4;
     font-weight: 700;
     overflow: hidden;
     margin-bottom: 0;
@@ -41,6 +77,7 @@
     position: relative;
     letter-spacing: 3px;
     font-size: 1.2rem;
+    color: #178CA4;
     font-weight: 700;
     overflow: hidden;
     margin-bottom: 0;

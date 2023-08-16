@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\indexShowIMGController;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardEditNavbarController;
+use App\Http\Controllers\DashboardIndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,5 @@ Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('ind
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboardIndex', [App\Http\Controllers\DashboardIndexController::class, 'index'])->name('dashboardIndex');
+Route::get('/dashboardEditNavbar', [App\Http\Controllers\DashboardEditNavbarController::class, 'index'])->name('dashboardEditNavbar');

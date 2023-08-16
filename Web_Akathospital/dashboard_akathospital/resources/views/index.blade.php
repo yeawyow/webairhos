@@ -5,7 +5,7 @@
     <div class="row ">
         <div class="col-8 mb-5" data-aos="fade-up" data-aos-duration="1500">
             <div class="container me-5 pe-5">
-                <p class="d-flex align-items-center justify-content-center ms-5 text-success" style="font-size: 3rem; font-weight: 700;">ประกาศ</p>
+                <p class="d-flex align-items-center justify-content-center ms-5 " style="font-size: 3rem; font-weight: 700; color: #178CA4;">ประกาศ</p>
                 <div id="jssor_1" class="mb-5 bg-body rounded " style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:680px;overflow:hidden;visibility:hidden;">
                     <!-- Loading Screen -->
                     <div data-u="loading" class="jssorl-009-spin " style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -83,13 +83,13 @@
         </div>
         <div class="col-4">
             <div class="container ">
-                <div class="mt-3 mb-4 text-success d-flex align-items-center justify-content-center">
-                    <h2 style="font-weight:700;" data-aos="fade-up" data-aos-duration="1500">ผู้อำนวยการโรงพยาบาล</h2>
+                <div class="mt-3 mb-4 p-2 text-success d-flex align-items-center justify-content-center">
+                    <h2 style="font-weight:700; color: #178CA4;" data-aos="fade-up" data-aos-duration="1500">ผู้อำนวยการโรงพยาบาล</h2>
                 </div>
-                <div style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); width:300px; height: 450px;" class="rounded-3 pt-4 ms-5" data-aos="fade-up" data-aos-duration="1500">
+                <div style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); width:300px; height: 450px;" class="rounded-3 pt-4 ms-5 bg-light" data-aos="fade-up" data-aos-duration="1500">
                     <img class="mx-auto d-block" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" src="http://akathospital.com/assets/images/directors/boss.jpg" alt="">
                     <p class="text-center mt-2" style="font-size: 1.2rem;">แพทย์หญิงจิรัฐติกาล สุตวณิชย์</p>
-                    <p class="text-center" style="font-size: 1rem; "></p>
+                    <p class="text-center" style="font-size: 1rem; color: #1b9ce3; "></p>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
             @include('index_template.patials.menuBar')
         </div>
         <div class="col-8">
-            <h1 class="mb-5 d-flex align-items-center justify-content-center bg-success text-light rounded-3" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1500">กิจกรรม</h1>
+            <h1 class="mb-5 d-flex align-items-center justify-content-center  rounded-3" style="background-color: #178CA4; color: #F9F7F0; box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" data-aos="fade-up" data-aos-duration="1500">กิจกรรม</h1>
             <div class="d-lg-flex" data-aos="fade-up" data-aos-duration="1500">
                 <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
                     <div class="backgroundEffect"></div>

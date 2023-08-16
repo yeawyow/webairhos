@@ -1,7 +1,7 @@
 <div class="accordion rounded-2" style="width: 400px; box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);" id="accordionExample" data-aos="fade-up" data-aos-duration="1500">
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" style="background-color: #178CA4; color: #F9F7F0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Link ภายนอก
             </button>
         </h2>
@@ -47,7 +47,7 @@
     </div>
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed" style="background-color: #178CA4; color: #F9F7F0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Link ภายใน
             </button>
         </h2>
