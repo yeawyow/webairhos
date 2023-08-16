@@ -23,6 +23,10 @@ class DashboardIndexController extends Controller
      */
     public function index()
     {
-        return view('dashboard_index');
+        if (auth()->user()->isAdmin()) {
+            return view('admin/dashboardIndex');
+        } else {
+            return view('/');
+        }
     }
 }

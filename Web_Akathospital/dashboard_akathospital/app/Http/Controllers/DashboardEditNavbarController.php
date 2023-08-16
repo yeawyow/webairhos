@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class DashboardEditNavbarController extends Controller
 {
     public function index() {
-        return view('dashboard_edit_navbar');
+        return view('admin/dashboard_edit_navbar');
     }
 }

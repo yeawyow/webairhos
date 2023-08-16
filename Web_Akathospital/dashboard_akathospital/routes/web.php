@@ -5,6 +5,7 @@ use App\Http\Controllers\indexController;
 use App\Http\Controllers\indexShowIMGController;
 use App\Http\Controllers\DashboardEditNavbarController;
 use App\Http\Controllers\DashboardIndexController;
+use App\Http\Controllers\admin\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,11 +23,12 @@ use App\Http\Controllers\DashboardIndexController;
 // });
 
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
-// Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard');
+Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard');
 
 Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 
 Auth::routes();
 
-Route::get('/dashboardIndex', [App\Http\Controllers\DashboardIndexController::class, 'index'])->name('dashboardIndex');
-Route::get('/dashboardEditNavbar', [App\Http\Controllers\DashboardEditNavbarController::class, 'index'])->name('dashboardEditNavbar');
+Route::get('/admin/dashboardIndex', [App\Http\Controllers\DashboardIndexController::class, 'index'])->name('dashboardIndex');
+Route::get('/admin/dashboardEditNavbar', [App\Http\Controllers\DashboardEditNavbarController::class, 'index'])->name('dashboardEditNavbar');
+
