@@ -8,13 +8,14 @@
 </head>
 
 <body>
+
     
+
     @include('index_template.patials.modal')
-    
+
+    {{-- @include('index_template.patials.navbar') --}}
+
     @include('index_template.patials.topNavbar')
-
-    @include('index_template.patials.navbar')
-
 
     @yield('content')
 

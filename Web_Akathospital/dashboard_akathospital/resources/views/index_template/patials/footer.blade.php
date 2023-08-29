@@ -1,19 +1,17 @@
-<footer class="text-white text-center text-lg-start bg-dark" id="footer" data-aos="fade-up" data-aos-duration="1500">
+<footer class="text-white text-center text-lg-start bg-dark " id="footer" data-aos="fade-up" data-aos-duration="1500">
     <!-- Grid container -->
     <div class="container p-4">
         <!--Grid row-->
-        <div class="row mt-4">
+        <div class="row mt-4 bg-dark">
             <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">About Hospital</h5>
-
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0 bg-dark">
+                <h5 class="text-uppercase mb-4 bg-dark">About Hospital</h5>
                 <p>
                     Akat Amnuay Hospital was originally a 10-bed hospital,
                     completed in 2525 BE, built on a 26 rai 29 square wah area
                     and commenced services on May 10, 2525 BE. In 2535 BE, the hospital was expanded to a 30-bed hospital.
                     Then on September 1, 2537 BE, further upgraded to a 60-bed hospital.
                 </p>
-
                 <div class="mt-4">
                     <!-- Facebook -->
                     <a type="button" class="btn btn-floating btn-light btn-lg" href="{{ url('https://www.facebook.com/akathospital') }}" target="_blank" title="Facebookโรงพยาบาลอากาศอำนวย"><i class="fab fa-facebook-f"></i></a>
@@ -29,7 +27,7 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 bg-dark">
                 <ul class="fa-ul" style="margin-left: 1.65em;">
                     <li class="mb-3">
                         <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">386 หมู่ 3 ถ.วันเฉลิม ต.อากาศ อ.อากาศอำนวย จ.สกลนคร 47170</span>
@@ -45,10 +43,10 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">วันให้รับบริการ</h5>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 bg-dark">
+                <h5 class="text-uppercase mb-4 bg-dark">วันให้รับบริการ</h5>
 
-                <table class="table text-center text-white">
+                <table class="table text-center  text-white">
                     <tbody class="fw-normal">
                         <tr>
                             <td>Mon - Thu:</td>

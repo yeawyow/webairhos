@@ -2,25 +2,63 @@ body {
     background-color: #F9F7F0;
 }
 
-/* Navbar */
-header.p-3.sticky-top.aos-init.aos-animate {
-    background-color: #178CA4;
-    
+.container .mt-4 .mb-4 {
+    background-color: #f8f9fa;
 }
 
-a.nav-link.px-2 {
-    color: #F9F7F0;
+/* btn menu accordian START */
+#btn-menu-accordian {
+    background: none;
+    background-repeat: no-repeat;
+    border: 2px solid #0C4A60;
+    color: #EF6C33;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#btn-menu-accordian:hover {
+    background: #0C4A60;
+    background-repeat: no-repeat;
+    border: 2px solid #EF6C33;
+    color: #E1DDDB;
+    font-weight: 600;
+}
+/* btn menu accordian END */
+
+/* btn menu Navbar START */
+.navbar-menu-top {
+    background: none;
+    background-repeat: no-repeat;
+    border: 2px solid #0C4A60;
+    color: #EF6C33;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar-menu-top:hover {
+    background: #0C4A60;
+    background-repeat: no-repeat;
+    border: 2px solid #EF6C33;
+    color: #E1DDDB;
+    font-weight: 600;
+}
+/* btn menu Navbar END */
+
+.dropdown-menu-navbar {
+    border: 5px solid #fff;
+    transition: all 0.1s ease;
+}
+
+.dropdown-menu-navbar:hover {
+    padding-left: 10px;
+    border-left: 5px solid #0C4A60;
+    border-right: 5px solid #0C4A60;
 }
 
 /* Font-color */
 .container_bottom {
     color: pink;
 }
-
-/* Background */
-/* .background .bg-light {
-    background-color: #fff;
-} */
 
 /* Dropdown Hover Navbar Menu Start */
 .dropdown:hover>.dropdown-menu {
@@ -33,29 +71,18 @@ a.nav-link.px-2 {
 }
 /* Dropdown Hover Navbar Menu End */
 
-
 /* Akathospital Effect Start*/
 .typing {
     position: relative;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
 }
 
-/* Top BTN */
-button#myBtn:hover {
-    background: #072A40;
-    color: #F9F7F0;
-}
-
 /* Menu Bar  */
-
-
-
-
 .typing h2{
     position: relative;
     letter-spacing: 5px;
     font-size: 7rem;
-    color: #178CA4;
+    color: #0C4A60;
     font-weight: 700;
     overflow: hidden;
     margin-bottom: 0;
@@ -77,7 +104,7 @@ button#myBtn:hover {
     position: relative;
     letter-spacing: 3px;
     font-size: 1.2rem;
-    color: #178CA4;
+    color: #0C4A60;
     font-weight: 700;
     overflow: hidden;
     margin-bottom: 0;
@@ -109,12 +136,16 @@ button#myBtn:hover {
     outline: none;
     cursor: pointer;
     padding: 15px;
+    background: #0C4A60;
+    color: #E1DDDB;
+    border: 2px solid #EF6C33;
     border-radius: 5px;
   }
   
   #myBtn:hover {
-    background-color: #555;
-    color: white;
+    background-color: #EF6C33;
+    border: 2px solid #0C4A60;
+    color: #000;
   }
 /* TO TOP END */
 

@@ -35,4 +35,19 @@
     <script src="{{ url('akathospital/JS/jssor.slider-28.1.0.min.js') }}" type="text/javascript"></script>
     <script src="{{ url('akathospital/JS/slider.js') }}" type="text/javascript"></script>
 
+    <script>
+        const navbar = document.getElementById('navbar');
+        let isFixed = true;
+    
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50 && isFixed) {
+            navbar.classList.remove('fixed-top');
+            isFixed = false;
+          } else if (window.scrollY <= 50 && !isFixed) {
+            navbar.classList.add('fixed-top');
+            isFixed = true;
+          }
+        });
+      </script>
+
     
