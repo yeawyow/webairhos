@@ -44,12 +44,28 @@ body {
 }
 /* btn menu Navbar END */
 
+.span-dropdown:after {
+    position: relative;
+    top: -1rem;
+    bottom: 0;
+    left: 1rem;
+    right: 0;
+    width: 0;
+    content: "";
+    height: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #0C4A60 transparent;
+}
+
 .dropdown-menu-navbar {
     border: 5px solid #fff;
     transition: all 0.1s ease;
 }
 
 .dropdown-menu-navbar:hover {
+    color: #EF6C33;
     padding-left: 10px;
     border-left: 5px solid #0C4A60;
     border-right: 5px solid #0C4A60;
@@ -95,7 +111,7 @@ body {
         width: 0;
     }
     60%,100% {
-        width: 120vh;
+        width: 117vh;
     }
 
 }
@@ -117,7 +133,7 @@ body {
         width: 0;
     }
     60%,100% {
-        width: 120vh;
+        width: 117vh;
     }
 
 }
@@ -316,7 +332,7 @@ body {
     width: 100%;
     position: absolute;
     z-index: -1;
-    background: #1b9ce3;
+    background: #0C4A60;
     animation: popBackground 0.3s ease-in
 }
 
@@ -363,7 +379,7 @@ body {
     justify-content: center;
     width: 50px;
     height: 70px;
-    background-color: #1b9ce3;
+    background-color: #0C4A60;
     color: white;
     position: absolute;
     bottom: 0px;
@@ -397,7 +413,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5px 10px;
-    background-color: #1b9ce3;
+    background-color: #0C4A60;
     border-radius: 25px;
     font-size: 12px;
     border: none
@@ -405,7 +421,7 @@ body {
 
 .card:hover .content .btn {
     background: #fff;
-    color: #1b9ce3;
+    color: #0C4A60;
     box-shadow: #0000001a 0px 3px 5px
 }
 
@@ -415,7 +431,7 @@ body {
 }
 
 .card .content .foot .admin {
-    color: #1b9ce3;
+    color: #0C4A60;
     font-size: 12px
 }
 
@@ -427,3 +443,10 @@ body {
     font-size: 12px
 }
 /* Card End */
+
+.custom-sidebar {
+    height: 75%;
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+}

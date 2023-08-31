@@ -21,6 +21,7 @@
                             เกี่ยวกับองค์กร
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <span class="span-dropdown"></span>
                             <li><a class="dropdown-item dropdown-menu-navbar" href="#">ประวัติองค์กร</a></li>
                             <li><a class="dropdown-item dropdown-menu-navbar" href="#">วิสัยทัศน์ พันธกิจ</a></li>
                             <li><a class="dropdown-item dropdown-menu-navbar" href="#">คณะกรรมการบริหาร</a></li>
@@ -37,6 +38,7 @@
                             ข่าวสาร
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <span class="span-dropdown"></span>
                             <li><a class="dropdown-item dropdown-menu-navbar" href="#">ข่าวประชาสัมพันธ์</a></li>
                             <li><a class="dropdown-item dropdown-menu-navbar" href="#">ข่าวจัดซื้อจัดจ้าง</a></li>
                         </ul>
@@ -49,6 +51,7 @@
                             ผลการดำเนินงาน ITA
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <span class="span-dropdown"></span>
                             <li><a class="dropdown-item dropdown-menu-navbar" href="#">ปีงบประมาณ 2565</a></li>
                             <li><a class="dropdown-item dropdown-menu-navbar" href="#">ปีงบประมาณ 2566</a></li>
                         </ul>
@@ -68,6 +71,7 @@
                             ผลงานวิชาการ
                         </a>
                         <ul class="dropdown-menu" style="z-index:9999;" aria-labelledby="dropdownMenuButton">
+                            <span class="span-dropdown"></span>
                             <li><a class="dropdown-item dropdown-menu-navbar" href="#">ผลงานวิชาการ 2565</a></li>
                         </ul>
                     </div>

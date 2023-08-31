@@ -23,7 +23,7 @@ use App\Http\Controllers\admin\AdminController;
 // });
 
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
-Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 
 Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 

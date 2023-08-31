@@ -17,18 +17,8 @@
 
     @include('index_template.patials.navbar')
 
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-4">
-                @include('index_template.patials.menuBar')
-            </div>
-            <div class="col-8">
-                @yield('content')
-            </div>
-        </div>
-    </div>
-
-
+    @yield('content')
+    
     @include('index_template.patials.footer')
 
     @include('index_template.patials.footer_script')

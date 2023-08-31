@@ -1,6 +1,8 @@
 @extends('index_template.mainIndex')
 
 @section('content')
+
+    {{-- Slider & Boss Start --}}
     <div class="container-fluid mt-5 mb-1 pt-5 pb-5"
         style="background-color: #E1DDDB; border-top: 30px solid #0C4A60; border-bottom: 30px solid #0C4A60;">
         <div class="row">
@@ -96,7 +98,7 @@
                         ผู้อำนวยการโรงพยาบาล</h2>
                 </div>
                 <div class="card border-0 me-lg-4 mb-lg-0 mb-4 d-flex align-items-center justify-content-center mt-5"
-                    style="position: relative; left:6.5rem; width: 300px; height: 500px;">
+                    style="position: relative; left:6.5rem; width: 300px; height: 500px;" data-aos="fade-up" data-aos-duration="1500">
                     <div class="backgroundEffect"></div>
                     <div class="pic mt-5" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);"> <img class=""
                             src="http://akathospital.com/assets/images/directors/boss.jpg" alt=""
@@ -114,13 +116,17 @@
             </div>
         </div>
     </div>
+    {{-- Slider & Boss End --}}
 
+    {{-- Navbar menu Start --}}
     <div class="container mt-1 mb-1">
         <div class="button-menu-bar">
             @include('index_template.patials.navbar')
         </div>
     </div>
+    {{-- Navbar menu End --}}
 
+    {{-- Employment Start --}}
     <div class="container-fluid"
         style="background-color: #E1DDDB; border-top: 30px solid #0C4A60; border-bottom: 30px solid #0C4A60;">
         <div class="row pt-5 pb-5 ps-5 pe-5">
@@ -191,4 +197,6 @@
             </div>
         </div>
     </div>
+    {{-- Employment End --}}
+
 @endsection
