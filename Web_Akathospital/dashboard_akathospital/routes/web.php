@@ -40,9 +40,6 @@ Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('ind
 
 Auth::routes();
 
-Route::get('/admin/dashboardIndex', [App\Http\Controllers\DashboardIndexController::class, 'index'])->name('dashboardIndex');
-Route::get('/admin/dashboardEditNavbar', [App\Http\Controllers\DashboardEditNavbarController::class, 'index'])->name('dashboardEditNavbar');
-
 Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');
 Route::get('/fetchall', [testCRUDAdminController::class, 'fetchAll'])->name('fetchAll');
 Route::get('/edit', [testCRUDAdminController::class, 'edit'])->name('edit');
