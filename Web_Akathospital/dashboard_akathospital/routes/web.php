@@ -3,8 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\indexShowIMGController;
-use App\Http\Controllers\DashboardEditNavbarController;
-use App\Http\Controllers\DashboardIndexController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\HomeController;
 
