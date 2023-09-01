@@ -12,14 +12,24 @@ class User extends Authenticatable
 {    
     use HasApiTokens, HasFactory, Notifiable;
 
+    const ADMIN_TYPE = 1;
+    const DEFALUT_TYPE = 0;
+
+    public function isAdmin() {
+        return $this->user_type === self::ADMIN_TYPE;
+    }
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
     protected $fillable = [
+        'name',
+        'username',
         'email',
         'password',
+        'user_type',
     ];
 
     /**

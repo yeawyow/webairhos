@@ -11,19 +11,18 @@
                 <form action="{{ route('login') }}" method="POST">
                     @csrf
                     <div class="row mb-3">
-                        <label for="email"
-                            class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
+                        <label for="login" class="col-md-4 col-form-label text-md-end">Username</label>
                         <div class="col-md-6">
-                            <input id="email" type="email"
-                                class="form-control @error('email') is-invalid @enderror" name="email"
-                                value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <input id="login" type="text"
+                                class="form-control
+                             {{ $errors->has('username') || $errors->has('email') ? ' is-invalid' : '' }}"
+                                name="login" value="{{ old('username') ?: old('email') }}" autofocus>
 
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
+                            @if ($errors->has('username') || $errors->has('email'))
+                                <span class="invalid-feedback">
+                                    <strong>{{ $errors->first('username') ?: $errors->first('email') }}</strong>
                                 </span>
-                            @enderror
+                            @endif
                         </div>
                     </div>
 

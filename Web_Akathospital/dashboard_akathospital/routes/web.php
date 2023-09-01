@@ -6,6 +6,7 @@ use App\Http\Controllers\indexShowIMGController;
 use App\Http\Controllers\DashboardEditNavbarController;
 use App\Http\Controllers\DashboardIndexController;
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,17 @@ use App\Http\Controllers\admin\AdminController;
 // });
 
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
-Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
+// Route for normal user
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+});
+
+// Route for admin
+Route::group(['prefix' => 'admin'], function () {
+    Route::group(['middleware' => ['admin']], function () {
+        Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+    });
+});
 
 Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 
@@ -31,4 +42,10 @@ Auth::routes();
 
 Route::get('/admin/dashboardIndex', [App\Http\Controllers\DashboardIndexController::class, 'index'])->name('dashboardIndex');
 Route::get('/admin/dashboardEditNavbar', [App\Http\Controllers\DashboardEditNavbarController::class, 'index'])->name('dashboardEditNavbar');
+
+Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');
+Route::get('/fetchall', [testCRUDAdminController::class, 'fetchAll'])->name('fetchAll');
+Route::get('/edit', [testCRUDAdminController::class, 'edit'])->name('edit');
+Route::post('/update', [testCRUDAdminController::class, 'update'])->name('update');
+Route::delete('/delete', [testCRUDAdminController::class, 'delete'])->name('delete');
 
