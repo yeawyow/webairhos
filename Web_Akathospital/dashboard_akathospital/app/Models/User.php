@@ -9,15 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
-{    
+{
     use HasApiTokens, HasFactory, Notifiable;
-
-    const ADMIN_TYPE = 1;
-    const DEFALUT_TYPE = 0;
-
-    public function isAdmin() {
-        return $this->user_type === self::ADMIN_TYPE;
-    }
 
     /**
      * The attributes that are mass assignable.
@@ -26,10 +19,8 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'username',
         'email',
         'password',
-        'user_type',
     ];
 
     /**
@@ -41,8 +32,6 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-
-   
 
     /**
      * The attributes that should be cast.

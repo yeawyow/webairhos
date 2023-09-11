@@ -22,25 +22,7 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
-// Route for normal user
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/home', [LoginController::class, 'index'])->name('home');
-});
-
-// Route for admin
-Route::group(['prefix' => 'admin'], function () {
-    Route::group(['middleware' => ['admin']], function () {
-        Route::get('/dashboard', [LoginController::class, 'index'])->name('dashboard');
-    });
-});
 
 Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 
-Auth::routes();
-
-Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');
-Route::get('/fetchall', [testCRUDAdminController::class, 'fetchAll'])->name('fetchAll');
-Route::get('/edit', [testCRUDAdminController::class, 'edit'])->name('edit');
-Route::post('/update', [testCRUDAdminController::class, 'update'])->name('update');
-Route::delete('/delete', [testCRUDAdminController::class, 'delete'])->name('delete');
 
