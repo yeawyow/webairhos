@@ -55,9 +55,9 @@ class LoginController extends Controller
 
     protected function redirectTo() {
         if (auth()->user()->isAdmin() ) {
-            return '/dashboard';
+            return ('/dashboard');
         } else {
-            return '/home';
+            return view('/');
         }
     }
     

@@ -34,7 +34,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="sidenav-item-link" href="/dashboardEditNavbar">
+                                <a class="sidenav-item-link" href="#">
                                     <span class="nav-text">Navbar</span>
 
                                 </a>

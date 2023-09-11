@@ -24,13 +24,13 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
 // Route for normal user
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/home', [LoginController::class, 'index'])->name('home');
 });
 
 // Route for admin
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => ['admin']], function () {
-        Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+        Route::get('/dashboard', [LoginController::class, 'index'])->name('dashboard');
     });
 });
 
