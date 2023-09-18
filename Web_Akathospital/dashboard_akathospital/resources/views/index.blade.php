@@ -101,7 +101,7 @@
                     style="position: relative; left:6.5rem; width: 300px; height: 500px;" data-aos="fade-up" data-aos-duration="1500">
                     <div class="backgroundEffect"></div>
                     <div class="pic mt-5" style="box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);"> <img class=""
-                            src="http://akathospital.com/assets/images/directors/boss.jpg" alt=""
+                            src="{{ url('akathospital/IMG/ผู้อำนวยการโรงพยาบาลอากาศอำนวย/01.jpg') }}" alt=""
                             style="font-size: cover;">
                     </div>
                     <div class="content">
