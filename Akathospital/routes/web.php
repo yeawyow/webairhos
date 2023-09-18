@@ -14,14 +14,14 @@ use App\Http\Controllers\indexController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', [indexController::class, 'index'])->name('Akathospital');
+// Route::get('/', [indexController::class, 'index'])->name('Akathospital');
 
-Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
+// Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
