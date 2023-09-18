@@ -6,6 +6,7 @@ use App\Http\Controllers\indexShowIMGController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\HomeController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +27,7 @@ Route::get('/', [indexController::class, 'index'])->name('Akathospital');
 Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
