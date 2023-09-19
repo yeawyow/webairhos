@@ -3,8 +3,8 @@
 @section('content')
     <div class="container-fluid mt-5 mb-5" style="height: 400px; margin-bottom: 20rem;">
         <div class="row" style="height: 500px;">
-            <div class="col-4" style="width: 130px;">
-                <div class="custom-sidebar w3-bar-block w3-black w3-card" style="width:130px">
+            <div class="col-4" style="width: 100px;">
+                <div class="custom-sidebar w3-bar-block w3-black w3-card" style="width:100px">
                     <h5 class="w3-bar-item">Menu</h5>
                     <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Fade')">Fade</button>
                     <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Left')">Left</button>
@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="col-8">
+            <div class="col-8 mt-5 mb-5">
                 <div style="margin-left: 10px">
                     <div id="Left" class="w3-container city w3-animate-left" style="display:none">
                         <h1 class="mb-5 d-flex align-items-center justify-content-center  rounded-3"

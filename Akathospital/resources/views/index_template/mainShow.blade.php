@@ -11,15 +11,15 @@
 
     @include('index_template.patials.modal')
 
-    {{-- Map Footer Alert Start --}}
-    
-    {{-- Map Footer Alert End --}}
-
     @include('index_template.patials.navbar')
 
-    @yield('content')
+    <div class="mt-5 mb-5">
+        @yield('content')
+    </div>
     
-    @include('index_template.patials.footer')
+    <div class="mt-5">
+        @include('index_template.patials.footer')
+    </div>
 
     @include('index_template.patials.footer_script')
 </body>

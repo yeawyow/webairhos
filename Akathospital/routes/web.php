@@ -27,6 +27,7 @@ Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
+Route::get('/indexShowIMG', [indexShowIMGController::class, 'index'])->name('indexShowIMG');
 
 //Route for normal user
 Route::group(['middleware' => ['auth']], function() {
