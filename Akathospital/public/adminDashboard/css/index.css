@@ -16,7 +16,7 @@
 
 nav#navbar {
     position: fixed;
-    width: 168vh;
+    width: calc(100% - 264px);
 }
 
 body {
@@ -69,7 +69,7 @@ li {
 }
 
 #navbar.default {
-    width: 204vh;
+    width: 100%;
 }
 
 .main {
@@ -149,6 +149,30 @@ a.sidebar-link {
 @media (min-width:768px) {
     .content {
         width: auto;
+    }
+}
+
+@media (max-width:1336px) {
+    .content {
+        width: auto;
+    }
+
+    nav#navbar {
+        width: 300vh;
+    }
+}
+
+@media (max-width:1920px) {
+    .content {
+        width: auto;
+    }
+
+    nav#navbar {
+        width: calc(100% - 264px);
+    }
+
+    #navbar.default {
+        width: 100%;
     }
 }
 
