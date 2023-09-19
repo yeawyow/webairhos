@@ -7,6 +7,7 @@ use App\Http\Controllers\admin\adminController;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\showsController;
 use App\Http\Controllers\activitiesController;
+use App\Http\Controllers\activityDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,9 @@ Route::group(['prefix' => 'admin'], function() {
         Route::get('/admin', [adminController::class, 'index'])->name('admin');
     });
 });
+
+// Dashboard 
+Route::get('/activityDashboard', [activityDashboardController::class, 'index'])->name('activityDashboard');
 
 Route::get('/testCRUD', [testCRUDAdminController::class, 'index'])->name('testCRUD');
 Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');

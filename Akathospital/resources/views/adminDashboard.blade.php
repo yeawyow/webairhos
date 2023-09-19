@@ -1,4 +1,4 @@
-@extends('admin.mainDashboard')
+@extends('admin.dashboard')
 
     @section('content')
 
@@ -7,6 +7,7 @@
                 <div class="mb-3 mt-3">
                     <h3>Dashboard</h3>
                 </div>
+                
             </div>
         </main>
 

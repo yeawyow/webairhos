@@ -1,3 +1,7 @@
+<!-- To TOP Start -->
+<button onclick="topFunction()" class="btn To-Top" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up fa-beat-fade" ></i></button>
+<!-- To TOP End -->
+
 {{-- Login Dashboard Start --}}
 <div class="modal fade" id="manageWebPage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">

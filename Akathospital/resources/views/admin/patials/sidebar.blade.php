@@ -36,14 +36,11 @@
                     <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
                         data-bs-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
                         <i class="fa-solid fa-sliders pe-2"></i>
-                        Dashboard
+                        Activities
                     </a>
                     <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Dashboard Analytics</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Dashboard Ecom</a>
+                            <a href="{{ url('activityDashboard') }}" class="sidebar-link ms-4">Activity</a>
                         </li>
                     </ul>
                 </li>
