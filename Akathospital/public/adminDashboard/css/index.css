@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,::after,::before {
+    box-sizing: border-box;
+}
+
+.fixed-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    padding-top: 15px;
+    /* Add any additional styles for your sidebar here */
+}
+
+nav#navbar {
+    position: fixed;
+    width: 168vh;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    background-image: url('../images/pexels-scott-webb-593158.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* Layout skkeleton */
+
+.warpper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+    box-shadow:  0 0 35px 0 rgba(49, 57, 66, 0.5);
+    z-index: 1111;
+    transition: all 1s ease;
+}
+
+/* Sidebar Collapsed */
+
+#sidebar.collapsed {
+    display: none;
+    margin-left: -264px;
+    transition: all 1s ease;
+}
+
+#navbar.default {
+    width: 204vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+.sidebar-logo {
+    padding: 1.15rem 0.5rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.image {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+}
+
+.sidebar-nav {
+    padding: 0;
+}
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #e9e9e9;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+.content {
+    flex: 1;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+/* .dropdown_user {
+    display: flex;
+    right: 50px;
+} */
+
+/* Responsive */
+
+@media (min-width:768px) {
+    .content {
+        width: auto;
+    }
+}
+
+/* container */ 
+.container-fluid {
+    margin-top: 50px;
+}
+
+

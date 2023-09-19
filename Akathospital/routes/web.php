@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\admin\adminController;
+use App\Http\Controllers\indexController;
+use App\Http\Controllers\indexShowIMGController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +39,10 @@ Route::group(['prefix' => 'admin'], function() {
         Route::get('/admin', [adminController::class, 'index'])->name('admin');
     });
 });
+
+Route::get('/testCRUD', [testCRUDAdminController::class, 'index'])->name('testCRUD');
+Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');
+Route::get('/fetchall', [testCRUDAdminController::class, 'fetchAll'])->name('fetchAll');
+Route::get('/edit', [testCRUDAdminController::class, 'edit'])->name('edit');
+Route::post('/update', [testCRUDAdminController::class, 'update'])->name('update');
+Route::delete('/delete', [testCRUDAdminController::class, 'delete'])->name('delete');
