@@ -6,8 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\admin\adminController;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\showsController;
-use App\Http\Controllers\activitiesController;
-use App\Http\Controllers\activityDashboardController;
+use App\Http\Controllers\offsiteActivitiesController;
+use App\Http\Controllers\offsiteActivitiesDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ Auth::routes();
 
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
 Route::get('/shows', [showsController::class, 'index'])->name('shows');
-Route::get('/activities', [activitiesController::class, 'index'])->name('activities');
+Route::get('/offsiteActivities', [offsiteActivitiesController::class, 'index'])->name('offsiteActivities');
 
 //Route for normal user
 Route::group(['middleware' => ['auth']], function() {
@@ -45,7 +45,8 @@ Route::group(['prefix' => 'admin'], function() {
 });
 
 // Dashboard 
-Route::get('/activityDashboard', [activityDashboardController::class, 'index'])->name('activityDashboard');
+Route::get('/offsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'index'])->name('offsiteActivitiesDashboard');
+Route::get('/fetchAllOffsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'fetchAll'])->name('fetchAllOffsiteActivitiesDashboard');
 
 Route::get('/testCRUD', [testCRUDAdminController::class, 'index'])->name('testCRUD');
 Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');

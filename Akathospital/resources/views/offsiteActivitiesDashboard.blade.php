@@ -5,33 +5,33 @@
         <main class="content px-3 py-2 mt-3 " >
             <div class="container-fluid">
                 <div class="mb-3 mt-3">
-                    <h3>Activity</h3>
+                    <h3>Off-site Activities</h3>
                 </div>
                 <div class="row my-15">
                     <div class="col-lg-12">
                         <div class="card shadow">
                             <div class="card-header d-flex justify-content-between align-items-center">
-                                <h3 class="text-dark">Manage Activity</h3>
-                                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addEmployeeModal"><i
-                                        class="bi-plus-circle me-2"></i> Add New Employee</button>
+                                <h3 class="text-dark">Manage Off-site Activities</h3>
+                                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addOffsiteActivitiesModal"><i
+                                        class="bi-plus-circle me-2"></i> Add New Off-site Activities</button>
                             </div>
-                            <div class="card-body" id="show_all_employees">
+                            <div class="card-body" id="show_all_offsiteActivitiesDashboard">
                                 <h1 class="text-center text-secondary my-5">Loading...</h1>
                             </div>
                         </div>
                     </div>
                 </div>
-                {{-- new employee modal --}}
-                <div class="modal fade" id="addEmployeeModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                {{-- new off-site activities modal --}}
+                <div class="modal fade" id="addOffsiteActivitiesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     data-bs-backdrop="static" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Add New Employee</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Add New Off-site Activities</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <form action="#" method="POST" id="add_employee_form" enctype="multipart/form-data">
+                            <form action="#" method="POST" id="add_OffsiteActivities_form" enctype="multipart/form-data">
                                 @csrf
                                 <div class="modal-body p-4 bg-light">
                                     <div class="row">
@@ -58,24 +58,24 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" id="add_employee_btn" class="btn btn-primary">Add
-                                        Employee</button>
+                                    <button type="submit" id="add_OffsiteActivities_btn" class="btn btn-primary">Add
+                                        Off-site Activities</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                {{-- edit employee modal --}}
-                <div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                {{-- edit Off-site Activities modal --}}
+                <div class="modal fade" id="editOffsiteActivitiesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     data-bs-backdrop="static" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Edit Employee</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Off-site Activities </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <form action="#" method="POST" id="edit_employee_form" enctype="multipart/form-data">
+                            <form action="#" method="POST" id="edit_OffsiteActivities_form" enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="emp_id" id="emp_id">
                                 <input type="hidden" name="emp_avatar" id="emp_avatar">
@@ -106,8 +106,8 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" id="edit_employee_btn" class="btn btn-success">Update
-                                        Employee</button>
+                                    <button type="submit" id="edit_OffsiteActivities_btn" class="btn btn-success">Update
+                                        Offsite Activities</button>
                                 </div>
                             </form>
                         </div>

@@ -40,7 +40,7 @@
                     </a>
                     <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="{{ url('activityDashboard') }}" class="sidebar-link ms-4">Activity</a>
+                            <a href="{{ url('offsiteActivitiesDashboard') }}" class="sidebar-link ms-4">Off-site Activities</a>
                         </li>
                     </ul>
                 </li>
