@@ -151,7 +151,7 @@
                             <p class="h-1 mt-4">โครงการแลกเปลี่ยนการดำเนิน IMC เครือข่ายจังหวัดสกลนครปี 2566</p>
                             {{-- <p class="text-muted mt-3">โรงพยาบาลอากาศอำนวย ขอขอบคุณพระคุณอาจารย์อนุชา วินิจสุมานนท์ แพทย์เวชศาสตร์ฟื้นฟู รพศ.สกลนคร และทีมเยี่ยมเสริมพลังทุกท่าน</p> --}}
                             <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
-                                <a href="{{ url('indexShowIMG') }}" class="btn btn-primary">Read More<span
+                                <a href="{{ url('activities') }}" class="btn btn-primary">Read More<span
                                         class="fas fa-arrow-right"></span></a>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                             <p class="h-1 mt-4">รับการประเมิน Green&Clean Challenge ประจำปี 2566</p>
                             {{-- <p class="text-muted mt-3">รับการประเมิน Gree&Clean Challenge ประจำปี 2566 โดยศูนย์อนามัยที่ 8 อุดรธานี ณ ห้องประชุมเล็ก โรงพยาบาลอากาศอำนวย</p> --}}
                             <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
-                                <a href="{{ url('indexShowIMG') }}" class="btn btn-primary">Read More<span
+                                <a href="{{ url('activities') }}" class="btn btn-primary">Read More<span
                                         class="fas fa-arrow-right"></span></a>
                             </div>
                         </div>
@@ -185,7 +185,7 @@
                             <p class="h-1 mt-4">รับเยี่ยมเสริมพลังและ Training on the job ในงานอนามัยแม่และเด็ก</p>
                             {{-- <p class="text-muted mt-3">แพทย์หญิงจิรัฐติกาล สุตวณิชย์ พร้อมด้วยเจ้าหน้าที่งานอนามัยแม่และเด็ก รับเยี่ยมเสริมพลังและ Training on the job </p> --}}
                             <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
-                                <a href="{{ url('indexShowIMG') }}" class="btn btn-primary">Read More<span
+                                <a href="{{ url('activities') }}" class="btn btn-primary">Read More<span
                                         class="fas fa-arrow-right"></span></a>
                             </div>
                         </div>

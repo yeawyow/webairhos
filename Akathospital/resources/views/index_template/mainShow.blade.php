@@ -11,13 +11,15 @@
 
     @include('index_template.patials.modal')
 
-    @include('index_template.patials.navbar')
+    <div class="" style="border-top: 15px solid #0C4A60; border-bottom: 15px solid #0C4A60; ">
+        @include('index_template.patials.navbar')
+    </div>
 
     <div class="mt-5 mb-5">
         @yield('content')
     </div>
     
-    <div class="mt-5">
+    <div id="info">
         @include('index_template.patials.footer')
     </div>
 
