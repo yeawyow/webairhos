@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\admin\adminController;
+use App\Http\Controllers\indexController;
+use App\Http\Controllers\showsController;
+use App\Http\Controllers\activitiesController;
+use App\Http\Controllers\activityDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,13 +20,17 @@ use App\Http\Controllers\admin\adminController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/', [indexController::class, 'index'])->name('Akathospital');
+Route::get('/shows', [showsController::class, 'index'])->name('shows');
+Route::get('/activities', [activitiesController::class, 'index'])->name('activities');
 
 //Route for normal user
 Route::group(['middleware' => ['auth']], function() {
@@ -32,6 +40,16 @@ Route::group(['middleware' => ['auth']], function() {
 //Route for admin
 Route::group(['prefix' => 'admin'], function() {
     Route::group(['middleware' => ['admin']], function() {
-        Route::get('/dashboard', [adminController::class, 'index'])->name('admin');
+        Route::get('/admin', [adminController::class, 'index'])->name('admin');
     });
 });
+
+// Dashboard 
+Route::get('/activityDashboard', [activityDashboardController::class, 'index'])->name('activityDashboard');
+
+Route::get('/testCRUD', [testCRUDAdminController::class, 'index'])->name('testCRUD');
+Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');
+Route::get('/fetchall', [testCRUDAdminController::class, 'fetchAll'])->name('fetchAll');
+Route::get('/edit', [testCRUDAdminController::class, 'edit'])->name('edit');
+Route::post('/update', [testCRUDAdminController::class, 'update'])->name('update');
+Route::delete('/delete', [testCRUDAdminController::class, 'delete'])->name('delete');

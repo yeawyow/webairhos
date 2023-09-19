@@ -1,0 +1,468 @@
+body {
+    background-color: #F9F7F0;
+}
+
+.container .mt-4 .mb-4 {
+    background-color: #f8f9fa;
+}
+
+/* btn menu accordian START */
+#btn-menu-accordian {
+    background: none;
+    background-repeat: no-repeat;
+    border: 2px solid #0C4A60;
+    color: #EF6C33;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#btn-menu-accordian:hover {
+    background: #0C4A60;
+    background-repeat: no-repeat;
+    border: 2px solid #EF6C33;
+    color: #E1DDDB;
+    font-weight: 600;
+}
+/* btn menu accordian END */
+
+/* btn menu Navbar START */
+.navbar-menu-top {
+    background: none;
+    background-repeat: no-repeat;
+    border: 2px solid #0C4A60;
+    color: #EF6C33;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar-menu-top:hover {
+    background: #0C4A60;
+    background-repeat: no-repeat;
+    border: 2px solid #EF6C33;
+    color: #E1DDDB;
+    font-weight: 600;
+}
+/* btn menu Navbar END */
+
+.span-dropdown:after {
+    position: relative;
+    top: -1rem;
+    bottom: 0;
+    left: 1rem;
+    right: 0;
+    width: 0;
+    content: "";
+    height: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #0C4A60 transparent;
+}
+
+.dropdown-menu-navbar {
+    border: 5px solid #fff;
+    transition: all 0.1s ease;
+}
+
+.dropdown-menu-navbar:hover {
+    color: #EF6C33;
+    padding-left: 10px;
+    border-left: 5px solid #0C4A60;
+    border-right: 5px solid #0C4A60;
+}
+
+/* Font-color */
+.container_bottom {
+    color: pink;
+}
+
+/* Dropdown Hover Navbar Menu Start */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+/* Dropdown Hover Navbar Menu End */
+
+/* Akathospital Effect Start*/
+.typing {
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+}
+
+/* Menu Bar  */
+.typing h2{
+    position: relative;
+    letter-spacing: 5px;
+    font-size: 7rem;
+    color: #0C4A60;
+    font-weight: 700;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: type 5s steps(120);
+}
+
+@keyframes type {
+
+    0%,30% {
+        width: 0;
+    }
+    60%,100% {
+        width: 117vh;
+    }
+
+}
+
+.typingP {
+    position: relative;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    color: #0C4A60;
+    font-weight: 700;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: logo 10s steps(120);
+}
+
+@keyframes logo {
+
+    0%,30% {
+        width: 0;
+    }
+    60%,100% {
+        width: 117vh;
+    }
+
+}
+
+/* Akathospital Effect End*/
+
+/* TO TOP Start */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    background: #0C4A60;
+    color: #E1DDDB;
+    border: 2px solid #EF6C33;
+    border-radius: 5px;
+  }
+  
+  #myBtn:hover {
+    background-color: #EF6C33;
+    border: 2px solid #0C4A60;
+    color: #000;
+  }
+/* TO TOP END */
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*jssor slider arrow skin 106 css*/
+.jssora106 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssora106 .c {
+    fill: #fff;
+    opacity: .3;
+}
+
+.jssora106 .a {
+    fill: none;
+    stroke: #000;
+    stroke-width: 350;
+    stroke-miterlimit: 10;
+}
+
+.jssora106:hover .c {
+    opacity: .5;
+}
+
+.jssora106:hover .a {
+    opacity: .8;
+}
+
+.jssora106.jssora106dn .c {
+    opacity: .2;
+}
+
+.jssora106.jssora106dn .a {
+    opacity: 1;
+}
+
+.jssora106.jssora106ds {
+    opacity: .3;
+    pointer-events: none;
+}
+
+/*jssor slider thumbnail skin 101 css*/
+.jssort101 .p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: #000;
+}
+
+.jssort101 .p .cv {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.jssort101 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 400;
+    stroke-miterlimit: 10;
+    visibility: hidden;
+}
+
+.jssort101 .p:hover .cv,
+.jssort101 .p.pdn .cv {
+    border: none;
+    border-color: transparent;
+}
+
+.jssort101 .p:hover {
+    padding: 2px;
+}
+
+.jssort101 .p:hover .cv {
+    background-color: rgba(0, 0, 0, 6);
+    opacity: .35;
+}
+
+.jssort101 .p:hover.pdn {
+    padding: 0;
+}
+
+.jssort101 .p:hover.pdn .cv {
+    border: 2px solid #fff;
+    background: none;
+    opacity: .35;
+}
+
+.jssort101 .pav .cv {
+    border-color: #fff;
+    opacity: .35;
+}
+
+.jssort101 .pav .a,
+.jssort101 .p:hover .a {
+    visibility: visible;
+}
+
+.jssort101 .t {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: .6;
+}
+
+.jssort101 .pav .t,
+.jssort101 .p:hover .t {
+    opacity: 1;
+}
+
+/* Card Start */
+.card {
+    width: 280px;
+    height: 420px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden
+}
+
+.card .backgroundEffect {
+    bottom: 0;
+    height: 0px;
+    width: 100%
+}
+
+.card:hover {
+    color: #fff;
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+.card:hover .backgroundEffect {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #0C4A60;
+    animation: popBackground 0.3s ease-in
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
+
+.card .pic {
+    position: relative
+}
+
+.card .pic img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover
+}
+
+.card .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 70px;
+    background-color: #0C4A60;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    transition: all ease
+}
+
+.card .date .day {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.card .date .month,
+.card .date .year {
+    font-size: 10px
+}
+
+.card .text-muted {
+    font-size: 12px
+}
+
+.card:hover .text-muted {
+    color: #fff !important
+}
+
+.card .content {
+    padding: 0 20px
+}
+
+.card .content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #0C4A60;
+    border-radius: 25px;
+    font-size: 12px;
+    border: none
+}
+
+.card:hover .content .btn {
+    background: #fff;
+    color: #0C4A60;
+    box-shadow: #0000001a 0px 3px 5px
+}
+
+.card .content .btn .fas {
+    font-size: 10px;
+    padding-left: 5px
+}
+
+.card .content .foot .admin {
+    color: #0C4A60;
+    font-size: 12px
+}
+
+.card:hover .content .foot .admin {
+    color: #fff
+}
+
+.card .content .foot .icon {
+    font-size: 12px
+}
+/* Card End */
+
+.custom-sidebar {
+    height: 75%;
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+}
+
+/* Start Fixed Bottom to Footer */
+#info { 
+    position: relative; 
+    bottom:0%;
+    width:100%; 
+    background-color: #393838; 
+    opacity: 1;
+}
+/* End Fixed Bottom to Footer */
+
+#activities-content {
+    display: flex;
+    position: relative;
+    margin-bottom: 5rem;
+}

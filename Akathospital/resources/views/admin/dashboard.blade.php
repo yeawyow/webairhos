@@ -1,25 +1,28 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        
 
-@section('content')
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Dashboard</div>
-                </div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in! as admin
-                </div>
+        @include('admin.patials.head')
+    </head>
+    <body>
+        
+        <div class="warpper">
+            {{-- Sidebar --}}
+            @include('admin.patials.sidebar')
+            {{-- Main Component --}}
+            <div class="main">
+                
+                @include('admin.patials.navbar_toggle')
+                
+                @yield('content')
+                
             </div>
+            
         </div>
-    </div>
 
-@endsection
+        {{-- @include('admin.patials.footer') --}}
+
+        @include('admin.patials.footer_script')
+    </body>
+</html>
