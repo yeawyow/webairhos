@@ -16,13 +16,15 @@ use App\Http\Controllers\admin\adminController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/', [indexController::class, 'index'])->name('Akathospital');
 
 //Route for normal user
 Route::group(['middleware' => ['auth']], function() {
@@ -32,6 +34,6 @@ Route::group(['middleware' => ['auth']], function() {
 //Route for admin
 Route::group(['prefix' => 'admin'], function() {
     Route::group(['middleware' => ['admin']], function() {
-        Route::get('/dashboard', [adminController::class, 'index'])->name('admin');
+        Route::get('/admin', [adminController::class, 'index'])->name('admin');
     });
 });
