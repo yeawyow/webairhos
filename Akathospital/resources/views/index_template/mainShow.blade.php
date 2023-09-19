@@ -14,10 +14,8 @@
     <div class="" style="border-top: 15px solid #0C4A60; border-bottom: 15px solid #0C4A60; ">
         @include('index_template.patials.navbar')
     </div>
-
-    <div class="mt-5 mb-5">
-        @yield('content')
-    </div>
+       
+    @yield('content')
     
     <div id="info">
         @include('index_template.patials.footer')

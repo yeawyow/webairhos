@@ -1,4 +1,4 @@
-<footer class="text-white text-center text-lg-start bg-dark " id="footer" data-aos="fade-up" data-aos-duration="1500">
+<footer class="text-white text-center text-lg-start bg-dark " id="footer" data-aos="fade-down" data-aos-duration="1500">
     <!-- Grid container -->
     <div class="container p-4">
         <!--Grid row-->

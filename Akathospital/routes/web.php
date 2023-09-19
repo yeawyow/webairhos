@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\admin\adminController;
 use App\Http\Controllers\indexController;
+use App\Http\Controllers\showsController;
 use App\Http\Controllers\activitiesController;
 
 /*
@@ -27,6 +28,7 @@ Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [indexController::class, 'index'])->name('Akathospital');
+Route::get('/shows', [showsController::class, 'index'])->name('shows');
 Route::get('/activities', [activitiesController::class, 'index'])->name('activities');
 
 //Route for normal user
