@@ -1,0 +1,23 @@
+[Database]
+    {akathospital}
+        [Table]
+            {users}
+                {id}
+                {name}
+                {username}
+                {email}
+                {email_verified_at}
+                {password}
+                {type}
+                {remember_token}
+                {created_at}
+                {updated_at}
+            {offsite_activities_dashboard}
+                {osa_id}
+                {osa_title}
+                {osa_content}
+                {osa_image}
+                {osa_date}
+                {created_at}
+                {updated_at}
+        
