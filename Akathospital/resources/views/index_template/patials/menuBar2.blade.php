@@ -9,7 +9,7 @@
             <div class="accordion-body">
                 <ol>
                     <li style="list-style: none;" class="mt-2">
-                        <a class="btn" id="btn-menu-accordian" style="text-decoration: none; width: 280px;" href="{{ url('activities') }}">ออกงานนอกสถานที่</a>
+                        <a class="btn" id="btn-menu-accordian" style="text-decoration: none; width: 280px;" href="{{ url('offsiteActivities') }}">ออกงานนอกสถานที่</a>
                     </li>
                 </ol>
             </div>
