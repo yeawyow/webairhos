@@ -51,7 +51,7 @@ class offsiteActivitiesDashboardController extends Controller
         $fileName = time() . '.' . $file->getClientOriginalExtension();
         $file->storeAs('public/images', $fileName); // php artisan storage:link
 
-        $offData = ['osa_title' => $request->title, 'osa_content' => $request->content, 'image' => $fileName, 'osa_date' => $request->date];
+        $offData = ['osa_title' => $request->title, 'osa_content' => $request->content, 'osa_image' => $fileName, 'osa_date' => $request->date];
         OffsiteActivitiesDashboard::create($offData);
         return response()->json([
             'status' => 200,
