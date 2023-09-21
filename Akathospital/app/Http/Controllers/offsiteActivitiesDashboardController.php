@@ -45,4 +45,16 @@ class offsiteActivitiesDashboardController extends Controller
             echo '<h1 class="text-center text-secondary my-5">No record in the database!</h1>';
         }
     }
+
+    public function store(Request $request) {
+        $file = $request->file('image');
+        $fileName = time() . '.' . $file->getClientOriginalExtension();
+        $file->storeAs('public/images', $fileName); // php artisan storage:link
+
+        $offData = ['osa_title' => $request->title, 'osa_content' => $request->content, 'image' => $fileName, 'osa_date' => $request->date];
+        OffsiteActivitiesDashboard::create($offData);
+        return response()->json([
+            'status' => 200,
+        ]);
+    }
 }

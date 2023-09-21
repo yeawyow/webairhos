@@ -48,6 +48,7 @@ Route::group(['prefix' => 'admin'], function() {
 Route::get('/offsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'index'])->name('offsiteActivitiesDashboard');
 Route::get('/fetchAllOffsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'fetchAll'])->name('fetchAllOffsiteActivitiesDashboard');
 
+
 Route::get('/testCRUD', [testCRUDAdminController::class, 'index'])->name('testCRUD');
 Route::post('/store', [testCRUDAdminController::class, 'store'])->name('store');
 Route::get('/fetchall', [testCRUDAdminController::class, 'fetchAll'])->name('fetchAll');

@@ -39,6 +39,36 @@
             });
         }
         // Fetch All Offsite Activities ajax request End
+
+        // Add New Offsite Activities ajax request Start
+        $("#add_OffsiteActivities_form").submit(function(e) {
+            e.preventDefault();
+            const fd = new FormData(this);
+            $("#add_OffsiteActivities_btn").text('Adding...');
+            $.ajax({
+                url: '{{ route('storeOffsiteActivitiesDashboard') }}',
+                method: 'post',
+                data: fd,
+                cache: false,
+                contentType: false,
+                processData: false,
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status == 200) {
+                        swal.fire(
+                            'Added!',
+                            'Offsite Activities Added Successfully!',
+                            'success'
+                        )
+                        fetchAllOffsiteActivitiesDashboard();
+                    }
+                    $("#add_OffsiteActivities_btn").text('Add OffsiteActivities');
+                    $("#add_OffsiteActivities_form")[0].reset();
+                    $("#addOffsiteActivitiesModal").modal('hide');
+                }
+            });
+        });
+        // Add New Offsite Activities ajax request End
     });
 </script>
 <!-- Offsite Activities Dashboard End -->
