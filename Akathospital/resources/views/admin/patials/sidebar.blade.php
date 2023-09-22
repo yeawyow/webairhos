@@ -35,7 +35,7 @@
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
                         data-bs-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
-                        <i class="fa-solid fa-sliders pe-2"></i>
+                        <i class="fa-solid fa-table pe-2"></i>
                         Activities
                     </a>
                     <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
@@ -47,15 +47,12 @@
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth"
                         aria-expanded="false" aria-controls="auth">
-                        <i class="fa-regular fa-user pe-2"></i>
-                        Auth
+                        <i class="fa-solid fa-earth-americas pe-2"></i>
+                        WebPage
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Login</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Register</a>
+                            <a href="{{ url('sliderJssorDashboard') }}" class="sidebar-link ms-4">Slider Jssor</a>
                         </li>
                     </ul>
                 </li>

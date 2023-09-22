@@ -18,42 +18,12 @@
                         </div>
                         <div data-u="slides"
                             style="cursor:default;position:relative;top:0px;left:0px;width:1180px;height:680px;overflow:hidden;">
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/03.jpg') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/03.jpg') }}" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/43.jpg') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/43.jpg') }}" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/6511.jpg') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/6511.jpg') }}" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/6512.png') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/6512.png') }}" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/6513.png') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/6513.png') }}" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/6514.jpg') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/6514.jpg') }}" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/66.jpg') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/66.jpg') }}" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/77.jpg') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/77.jpg') }}" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="{{ url('akathospital/IMG/side_show/nogift3.jpg') }}" />
-                                <img data-u="thumb" src="{{ url('akathospital/IMG/side_show/nogift3.jpg') }}" />
-                            </div>
+                            @foreach ($sdjs as $sdjss)
+                                <div>
+                                    <img data-u="image" src="storage/images/sliderJssor/{{ $sdjss->sdjs_image }}" />
+                                    <img data-u="thumb" src="storage/images/sliderJssor/{{ $sdjss->sdjs_image }}" />
+                                </div>
+                            @endforeach
                         </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web
                             animation</a>
                         <!-- Thumbnail Navigator -->

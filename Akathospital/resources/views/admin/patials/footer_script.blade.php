@@ -22,7 +22,6 @@
 <!--SweetAlert2 CDN JS-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
 
-
 <!-- Offsite Activities Dashboard Start -->
 <script>
     $ (function() {
@@ -72,3 +71,53 @@
     });
 </script>
 <!-- Offsite Activities Dashboard End -->
+
+<!-- Slider Jssor Dashboard Start -->
+    <script>
+        $ (function() {
+            // Fetch All Offsite Activities ajax request Start
+                fetchAllSliderJssor();
+
+                function fetchAllSliderJssor() {
+                    $.ajax({
+                        url: '{{ route('fetchAllSliderJssorDashboard') }}',
+                        method: 'get',
+                        success: function(response) {
+                            $("#show_all_sliderJssorDashboard").html(response);
+                        }
+                    });
+                }
+            // Fetch All Offsite Activities ajax request End
+
+            // Add new slider jssor ajax request Start
+                $("#sliderJssor_form").submit(function(e) {
+                    e.preventDefault();
+                    const fd = new FormData(this);
+                    $("#sliderJssor_btn").text('Adding...');
+                    $.ajax({
+                        url: '{{ route('storeSliderJssorDashboard') }}',
+                        method: 'post',
+                        data: fd,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        dataType: 'json',
+                        success: function(response) {
+                            if (response.status == 200) {
+                                swal.fire(
+                                    'Added!',
+                                    'Offsite Activities Added Successfully!',
+                                    'success'
+                                )
+                                fetchAllSliderJssor();
+                            }
+                            $("#sliderJssor_btn").text('Add OffsiteActivities');
+                            $("#sliderJssor_form")[0].reset();
+                            $("#sliderJssorModal").modal('hide');
+                        }
+                    });
+                });
+            // Add new slider jssor ajax request End
+        });
+    </script>
+<!-- Slider Jssor Dashboard End -->

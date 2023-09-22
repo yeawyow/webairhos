@@ -8,6 +8,7 @@ use App\Http\Controllers\indexController;
 use App\Http\Controllers\showsController;
 use App\Http\Controllers\offsiteActivitiesController;
 use App\Http\Controllers\offsiteActivitiesDashboardController;
+use App\Http\Controllers\sliderJssorDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,14 @@ Route::group(['prefix' => 'admin'], function() {
 });
 
 // Dashboard 
-Route::get('/offsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'index'])->name('offsiteActivitiesDashboard');
-Route::get('/fetchAllOffsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'fetchAll'])->name('fetchAllOffsiteActivitiesDashboard');
-Route::post('/storeOffsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'store'])->name('storeOffsiteActivitiesDashboard');
+    // OffsiteActivitiesDashboard Start
+        Route::get('/offsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'index'])->name('offsiteActivitiesDashboard');
+        Route::get('/fetchAllOffsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'fetchAll'])->name('fetchAllOffsiteActivitiesDashboard');
+        Route::post('/storeOffsiteActivitiesDashboard', [offsiteActivitiesDashboardController::class, 'store'])->name('storeOffsiteActivitiesDashboard');
+    // OffsiteActivitiesDashboard End
+
+    // SliderJssorDashboard Start
+        Route::get('/sliderJssorDashboard', [sliderJssorDashboardController::class, 'index'])->name('sliderJssorDashboard');
+        Route::get('/fetchAllSliderJssorDashboard', [sliderJssorDashboardController::class, 'fetchAll'])->name('fetchAllSliderJssorDashboard');
+        Route::post('/storeSliderJssorDashboard', [sliderJssorDashboardController::class, 'store'])->name('storeSliderJssorDashboard');
+    // SliderJssorDashboard End
