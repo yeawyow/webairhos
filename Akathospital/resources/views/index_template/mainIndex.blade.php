@@ -3,13 +3,11 @@
 
 <head>
 
-
     @include('index_template.patials.head')
+    
 </head>
 
 <body>
-
-    
 
     @include('index_template.patials.modal')
 
@@ -22,6 +20,7 @@
     @include('index_template.patials.footer')
 
     @include('index_template.patials.footer_script')
+
 </body>
 
 </html>
