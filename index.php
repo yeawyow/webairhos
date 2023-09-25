@@ -1,3 +1,21 @@
+<?php
+
+    $servername = "202.80.228.46";
+    $username = "sa";
+    $password = "sa";
+
+    try {
+        $conn = new PDO("mysql:host=$servername;dbname=airoffice", $username, $password);
+        // set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // echo "Connected successfully";
+    } catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,48 +31,21 @@
 <table id="myTable" class="display" style="width: 100%;">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
             </tr>
         </thead>
         <tbody>
+            <?php 
+                $stmt = $conn->prepare("SELECT * FROM airoffice");
+                $stmt->execute();
+            ?>
+            <?php foreach($result as $re) {  ?>
             <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
+                <td><?php echo $re['hn']; ?></td>
+                <td><?php echo $re['pname']; ?></td>
             </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
-            </tr>
-            
+            <?php } ?>
         </tbody>
     </table>
     <script>
