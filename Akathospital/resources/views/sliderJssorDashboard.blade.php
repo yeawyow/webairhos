@@ -1,8 +1,8 @@
-@extends('admin.adminDashboard')
+@extends('admin.dashboard')
 
 @section('content')
 
-<main class="content px-3 py-2 mt-3" style="margin-left: 17rem;">
+<main class="content px-3 py-2 mt-3" style="margin-left: 1rem;">
     <div class="container-fluid">
         <div class="mb-3 mt-3">
             <h3>Slider Jssor </h3>
@@ -30,7 +30,7 @@
                 <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
                     <div class="row">
                         <div class="col-sm-12">
-                            <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" aria-describedby="example1_info">
+                            <table id="myTable" class="table table-bordered table-striped dataTable dtr-inline" >
                                 <thead>
                                     <tr>
                                         <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="ID: activate to sort column descending">ID</th>

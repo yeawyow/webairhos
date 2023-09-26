@@ -9,6 +9,7 @@ use App\Http\Controllers\showsController;
 use App\Http\Controllers\offsiteActivitiesController;
 use App\Http\Controllers\offsiteActivitiesDashboardController;
 use App\Http\Controllers\sliderJssorDashboardController;
+use App\Http\Controllers\testController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,3 +58,7 @@ Route::group(['prefix' => 'admin'], function() {
         Route::get('/fetchAllSliderJssorDashboard', [sliderJssorDashboardController::class, 'fetchAll'])->name('fetchAllSliderJssorDashboard');
         Route::post('/storeSliderJssorDashboard', [sliderJssorDashboardController::class, 'store'])->name('storeSliderJssorDashboard');
     // SliderJssorDashboard End
+
+// test Start
+Route::get('/test', [testController::class, 'index']);
+// test End
