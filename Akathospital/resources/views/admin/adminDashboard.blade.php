@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        @include('admin.LTEpatials.header')
+        @include('admin.patial.header')
+
+        @yield('header')
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
-        <div class="wrapper">
+        
+            <div class="wrapper d-flex align-items-stretch">
 
-            <!-- Preloader -->
-            @include('admin.LTEpatials.preloader')
+                @include('admin.patial.menu')
 
-            <!-- Navbar -->
-            @include('admin.LTEpatials.navbar')
-            <!-- /.navbar -->
+                <!-- Preloader -->
+                @include('admin.patial.preloader')
 
-            <!-- Main Sidebar Container -->
-            @include('admin.LTEpatials.sidebar')
+                <!-- Main Sidebar-->
+                @include('admin.patial.sidebar')
 
-            <!-- Content Wrapper. Contains page content -->
-            @yield('content')
-            <!-- /.content-wrapper -->
-            @include('admin.LTEpatials.footer')
+                <!-- Content Wrapper. Contains page content -->
+                @yield('content')
 
-            <!-- Control Sidebar -->
-            @include('admin.LTEpatials.controlSidebar')
-            <!-- /.control-sidebar -->
-        </div>
-            <!-- ./wrapper -->
+            </div>
+                <!-- ./wrapper -->
 
-            @include('admin.LTEpatials.footerScript')
+            @include('admin.patial.script')
     </body>
 </html>
