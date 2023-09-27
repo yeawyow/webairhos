@@ -10976,7 +10976,7 @@ a[data-toggle=collapse] {
     color: rgba(255,255,255,.5)
 }
 
-.form-control {
+/* .form-control {
     height: 40px!important;
     background: #fff;
     color: #000;
@@ -10989,7 +10989,7 @@ a[data-toggle=collapse] {
 
 .form-control:focus,.form-control:active {
     border-color: #000
-}
+} */
 
 .form-control::-webkit-input-placeholder {
     color: rgba(255,255,255,.5)

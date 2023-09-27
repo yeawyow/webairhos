@@ -74,7 +74,7 @@
                 }));
                 i.referrerPolicy = "origin";
                 i.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a[c])));
-                h.parentNode.insertBefore(i, h)
+                h.parentNode.insertBefore(i, h);
             };
             ["complete", "interactive"].includes(b.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init)
         }(w, d, "zarazData", "script");
@@ -86,3 +86,58 @@
 <script src="{{ url('newAdminDashboard/js/bootstrap.min.js') }}"></script>
 <script src="{{ url('newAdminDashboard/js/main.js') }}"></script>
 <script defer="" referrerpolicy="origin" src="/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyU2lkZWJhciUyMDA1JTIyJTJDJTIyeCUyMiUzQTAuNTM0NTQzMDI2NDIxMDQ5MyUyQyUyMnclMjIlM0ExNjAwJTJDJTIyaCUyMiUzQTkwMCUyQyUyMmolMjIlM0EzMDIlMkMlMjJlJTIyJTNBMTYwMCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmNvbG9ybGliLmNvbSUyRmV0YyUyRmJvb3RzdHJhcC1zaWRlYmFyJTJGc2lkZWJhci0wNSUyRiUyMiUyQyUyMnIlMjIlM0ElMjIlMjIlMkMlMjJrJTIyJTNBMjQlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBLTQyMCUyQyUyMnElMjIlM0ElNUIlNUQlN0Q="></script>
+
+{{-- Jquery --}}
+<script src='https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js'></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+</script>
+
+<script>
+    $(function(){
+        fetchAllEmployees();
+
+        function fetchAllEmployees() {
+            $.ajax({
+                url: '{{ route('fetchAllSliderJssorDashboard') }}',
+                method: 'get',
+                success: function(response) {
+                    $("#show_all_sliderJssor").html(response);
+                    // $("table").DataTable({
+                    //     order: [0, 'desc']
+                    // });
+                }
+            });
+        }
+
+        $("#add_sliderJssor_form").submit(function(e) {
+            e.preventDefault();
+            const fd = new FormData(this);
+            $("#add_sliderJssor_btn").text('Adding...');
+            $.ajax({
+                url: '{{ route('storeSliderJssorDashboard') }}',
+                method: 'post',
+                data: fd,
+                cache: false,
+                contentType: false,
+                processData: false,
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status == 200) {
+                        swal.fire(
+                            'Add Success Fully!',
+                            'Offsite Activities Added Successfully!',
+                            'success'
+                        );
+                        // $('#myTable')[0].reset();
+                        fetchAllSliderJssor();
+                    } 
+                    $("#add_sliderJssor_btn").text('Add Employee');
+                    $("#add_sliderJssor_form")[0].reset();
+                    $("#addSliderJssorModal").modal('hide');
+                }
+            });
+        });
+    }); 
+</script>

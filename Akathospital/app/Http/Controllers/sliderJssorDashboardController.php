@@ -18,7 +18,7 @@ class sliderJssorDashboardController extends Controller
         $sliderJssor = sliderJssorDashboard::all();
         $output = '';
         if ($sliderJssor->count() > 0) {
-            $output .= '<table id="myTable" class="table table-striped" style="width:100%">
+            $output .= '<table>
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -39,8 +39,7 @@ class sliderJssorDashboardController extends Controller
                                     </td>
                                 </tr>';
                             }
-                            '</tbody>          
-                        </table>
+                            '</tbody>  </table>        
             ';
             echo $output;
         } else {
@@ -52,18 +51,12 @@ class sliderJssorDashboardController extends Controller
         $file = $request->file('image');
 
         // ตรวจสอบสกุลของไฟล์
-        $allowedExtensions = ['jpg', 'jpeg', 'png'];
-        $extension = $file->getClientOriginalExtension();
-
-        if (!in_array($extension, $allowedExtensions)) {
-            return response()->json([
-                'status' => 400,
-                'message' => 'ไม่อนุญาตให้อัปโหลดไฟล์นี้'
-            ]);
-        }
+        // $allowedExtensions = ['jpg', 'jpeg', 'png'];
+        // $extension = $file->getClientOriginalExtension();
 
         // ทำการอัปโหลดไฟล์
-        $fileName = time() . '.' . $extension;
+        // $fileName = time() . '.' . $extension;
+        $fileName = time() . '.' . $file->getClientOriginalExtension();
         $file->storeAs('public/images/sliderJssor', $fileName);
 
         // บันทึกข้อมูลลงฐานข้อมูล
