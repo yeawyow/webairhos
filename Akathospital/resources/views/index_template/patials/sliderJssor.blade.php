@@ -9,12 +9,12 @@
                         </div>
                         <div data-u="slides"
                             style="cursor:default;position:relative;top:0px;left:0px;width:1180px;height:680px;overflow:hidden;">
-                            @foreach ($sdjs as $sdjss)
+                            {{-- @foreach ($sdjs as $sdjss)
                                 <div>
                                     <img data-u="image" src="storage/images/sliderJssor/{{ $sdjss->sdjs_image }}" />
                                     <img data-u="thumb" src="storage/images/sliderJssor/{{ $sdjss->sdjs_image }}" />
                                 </div>
-                            @endforeach
+                            @endforeach --}}
                         </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web
                             animation</a>
                         <!-- Thumbnail Navigator -->

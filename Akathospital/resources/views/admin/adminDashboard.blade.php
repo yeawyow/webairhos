@@ -6,10 +6,10 @@
         @yield('header')
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
-        
+        {{-- @yield('script') --}}
             <div class="wrapper d-flex align-items-stretch">
 
-                @include('admin.patial.menu')
+                {{-- @include('admin.patial.menu') --}}
 
                 <!-- Preloader -->
                 @include('admin.patial.preloader')
@@ -19,10 +19,15 @@
 
                 <!-- Content Wrapper. Contains page content -->
                 @yield('content')
-
+                
             </div>
                 <!-- ./wrapper -->
 
+            
+
             @include('admin.patial.script')
+            
+            
+            @include('admin.patial.script_run')
     </body>
 </html>

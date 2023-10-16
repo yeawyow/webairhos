@@ -5,113 +5,132 @@
 @endsection
 
 @section('content')
-    <div id="content" class="p-4 p-md-5 pt-5 mt-5">
-        <div class="row">
-            <div class="col-8">
-                <h1>Slider Jssor</h1>
+{{-- add new employee modal start --}}
+<div class="modal fade" id="addEmployeeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Employee</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="col-4">
-                <div class="add-menu d-flex justify-content-end" style="">
-                    <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#addSliderJssorModal"><i
-                            class="bi-plus-circle "></i>Add Slider Jssor</button>
-                </div>
-            </div>
-        </div>
-        <div class="" id="show_all_sliderJssor"></div>
-        {{-- <table id="myTable" class="table table-striped" style="width:100%">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Image</th>
-                    <th>Edit & Delete</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($sdjs as $sd)
-                    <tr>
-                        <td>{{ $sd->sdjs_id }}</td>
-                        <td>{{ $sd->sdjs_name }}</td>
-                        <td><img src="storage/images/sliderJssor/{{ $sd->sdjs_image }}" alt="" width="50"
-                                class="img-thumbnail rounded"></td>
-                        <td>
-                            <a href="#" id="{{ $sd->sdjs_id }}" class="btn btn-sm btn-success mx-1 editIcon"
-                                data-bs-toggle="modal" data-bs-target="#editSliderJssorModal"><i
-                                    class="bi-pencil-square h4"></i></a>
-                            <a href="#" id="{{ $sd->sdjs_id }}" class="btn btn-sm btn-danger mx-1 deleteIcon"><i
-                                    class="bi-trash h4"></i></a>
-                        </td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table> --}}
-        {{-- new Slider Jssor modal Start --}}
-        <div class="modal fade" id="addSliderJssorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">เพิ่มข้อมูล Slider Jssor</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <form action="#" method="POST" id="add_employee_form" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body p-4 bg-light">
+                    <div class="row">
+                        <div class="col-lg">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="col-lg">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <form action="#" method="POST" id="add_sliderJssor_form" enctype="multipart/form-data">
-                            @csrf
-                            <div class="modal-body p-4 bg-light">
-                                <div class="form-floating mb-3">
-                                    <input type="text" name="name" class="form-control" id="floatingInput"
-                                        placeholder="title">
-                                    <label for="floatingInput">หัวข้อ</label>
-                                </div>
-                                <div class="my-2">
-                                    <label for="image">เพิ่มรูปกิจกรรม</label>
-                                    <input type="file" name="image" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" id="add_sliderJssor_btn" class="btn btn-primary">Add
-                                    Slider Jssor</button>
-                            </div>
-                        </form>
+                    <div class="my-2">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="post">Post</label>
+                        <input type="text" name="post" class="form-control" placeholder="Post" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="avatar">Select Avatar</label>
+                        <input type="file" name="avatar" class="form-control" required>
                     </div>
                 </div>
-            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" id="add_employee_btn" class="btn btn-primary">Add Employee</button>
+                </div>
+            </form>
         </div>
-        {{-- new Slider Jssor modal End --}}
-        {{-- edit Slider Jssor modal --}}
-        <div class="modal fade" id="editSliderJssorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Edit Slider Jssor </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+</div>
+{{-- add new employee modal end --}}
+
+{{-- edit employee modal start --}}
+<div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Employee</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="#" method="POST" id="edit_employee_form" enctype="multipart/form-data">
+                @csrf
+                <input type="hidden" name="emp_id" id="emp_id">
+                <input type="hidden" name="emp_avatar" id="emp_avatar">
+                <div class="modal-body p-4 bg-light">
+                    <div class="row">
+                        <div class="col-lg">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" class="form-control"
+                                placeholder="First Name" required>
+                        </div>
+                        <div class="col-lg">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" class="form-control"
+                                placeholder="Last Name" required>
+                        </div>
                     </div>
-                    <form action="#" method="POST" id="sliderJssor_form" enctype="multipart/form-data">
-                        @csrf
-                        <input type="hidden" name="sdjs_id" id="sdjs_id">
-                        <input type="hidden" name="sdjs_image" id="sdjs_image">
-                        <div class="modal-body p-4 bg-light">
-                            <div class="row">
-                                <div class="col-lg">
-                                    <label for="name">ชื่อหัวข้อ</label>
-                                    <input type="text" name="name" id="name" class="form-control"
-                                        placeholder="Name" required>
-                                </div>
-                            </div>
-                            <div class="my-2">
-                                <label for="image">รูปที่ต้องการอัพขึ้น Slider</label>
-                                <input type="file" name="image" class="form-control">
-                            </div>
-                            <div class="mt-2" id="image"></div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" id="sliderJssor_btn" class="btn btn-success">Update
-                                Slider Jssor</button>
-                        </div>
-                    </form>
+                    <div class="my-2">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" class="form-control"
+                            placeholder="E-mail" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" class="form-control"
+                            placeholder="Phone" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="post">Post</label>
+                        <input type="text" name="post" id="post" class="form-control" placeholder="Post"
+                            required>
+                    </div>
+                    <div class="my-2">
+                        <label for="avatar">Select Avatar</label>
+                        <input type="file" name="avatar" class="form-control">
+                    </div>
+                    <div class="mt-2" id="avatar">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" id="edit_employee_btn" class="btn btn-success">Update Employee</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{{-- edit employee modal end --}}
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-lg-12">
+                <div class="card shadow">
+                    <div class="card-header bg-danger d-flex justify-content-between align-items-center">
+                        <h3 class="text-light">Manage Employees</h3>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#addEmployeeModal"><i
+                                class="bi-plus-circle me-2"></i>Add New Employee</button>
+                    </div>
+                    <div class="card-body" id="show_all_employees">
+                        <h1 class="text-center text-secondary my-5">Loading...</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+
+{{-- @section('script')
+    <script>
+        
+    </script>
+@endsection --}}
